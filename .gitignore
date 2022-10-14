@@ -1,0 +1,4 @@
+# Ifnoring problmeaic Mac gnerated files
+*.DS_Store
+*.jpg
+*.jpeg
