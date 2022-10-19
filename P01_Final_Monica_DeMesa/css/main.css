@@ -1,0 +1,345 @@
+/*
+  STYLE GUIDE STYLING
+
+  Branding Colours :
+  #21691B (Green)
+  #1EBDC7 (Teal)
+  #FFF6BD (Cream)
+  #0f8781 (dark teal)
+
+  Default styling for the style guide
+*/
+*{
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  .title-page{
+    font-size: 4em;
+  }
+
+  .title-name{
+    font-size: 4em;
+  }
+
+  #header-one{
+    font-size: 4em;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* element styling */
+
+img{
+  max-width: 75%;
+  height: auto;
+  /* padding:0.5em; */
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05em;
+  /* font-family: 'Roboto', sans-serif; */
+  padding: 2rem;
+  /* background-color: black; */
+}
+
+h1{
+  /* used this link to help me center the text https://www.w3schools.com/css/css_align.asp */
+  /* text-align: center; */
+font-family: 'Paytone One', sans-serif;
+  /* font-family: "Archivo", sans-serif; */
+  color: black;
+  font-size: 6.5em;
+}
+
+h2 {
+font-family: 'Paytone One', sans-serif;
+  /* font-family: "Archivo", sans-serif; */
+  margin-top: 6rem;
+  color:#0f8781;
+  font-size: 2.4em;
+}
+
+h3 {
+font-family: 'Paytone One', sans-serif;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #21691B;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1.05em;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav{
+  text-align: center;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  background-color: #21691B;
+  border-radius: 12px;
+  color: #FFF6BD;
+}
+
+code{
+  background-color: none;
+  padding: 0.5rem;
+  display: block;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  margin: 0.5em;
+  /* padding: 0.5em; */
+}
+
+
+
+/* flex box */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+
+}
+
+.box{
+  padding:1em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+  border: 0.15em solid #21691B;
+  margin: 1em;
+  max-width: 30%;
+}
+
+.element {
+  padding-bottom: 5rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+
+/* Specifiying Fonts for Branding Fonts */
+.font-payton-big{
+  font-family: 'Paytone One', sans-serif;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.font-oswald-big{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.font-payton{
+  font-family: 'Paytone One', sans-serif;
+}
+
+.font{
+  font-size: 25px;
+  font-style: normal;
+}
+
+
+.title-name{
+  /* used this link to help me center the text https://www.w3schools.com/css/css_align.asp */
+  text-align: center;
+  margin-bottom:0;
+}
+
+.title-page{
+  text-align: center;
+  margin-bottom:0;
+  margin-bottom: 2.5em;
+}
+
+.title-description{
+  text-align: center;
+  margin:0;
+  margin-bottom: 5em;
+}
+
+
+
+
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: #21691B;
+  color: #FFF6BD;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-size: 16px;
+  /* this link was used to help me create rounded edges on the button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border-radius: 12px;
+}
+
+.button-styl {
+  font-family:inherit;
+  display: inline-block;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #21691B;
+  color: #FFF6BD;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-size: 1em;
+  /* this link was used to help me create rounded edges on the button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons */
+  border-radius: 12px;
+  border: none;
+
+}
+
+.button-styl:hover, .button-nav:focus {
+  background-color: black;
+  color: #FFF6BD;
+}
+
+
+.button-nav:hover, .button-nav:focus {
+  background-color: black;
+  color: #FFF6BD;
+}
+
+
+
+.nav-bar{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  padding:10px;
+  border-radius: 12px;
+  margin: 0;
+}
+
+.link-look{
+  color:black;
+}
+
+.link-look:hover, .button-nav:focus {
+  color: #21691B;
+  /* font-weight: bold; */
+}
+
+/* this webpage was used to help me create a different hover and focus state for the image as a link. I added an opacity effect https://www.w3schools.com/css/css3_images.asp */
+.image-link:hover, .image-link:focus {
+opacity:0.5;
+/* border: 0.2em solid #21691B; */
+}
+
+/* used this link to help me add css to placeholder type https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::placeholder{
+  color: #21691B;
+  opacity: 0.6;
+}
+
+/* this site helped me to style the inputs and labels https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/ */
+.input-text{
+  width: 30%;
+  padding:1.05em;
+  margin:0;
+  border-radius: 12px;
+  border: 2px solid #21691B;
+  /* background-color: #FFF6BD; */
+}
+
+.booking{
+  border: 0;
+}
+
+.grouping{
+  margin-top: 1em;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.text-element{
+  margin: 0;
+}
+
+.negative-space{
+  margin-top: 1em;
+}
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+.space{
+  margin: 1em;
+}
+
+.form-box{
+  max-width: 50%;
+}
+.form-row{
+  display: flex;
+  padding:.5em;
+  /* justify-content: flex-end; */
+  /* flex-direction: column; */
+}
+
+.form-row > label {
+   padding: 0;
+   margin-bottom: 0;
+   margin-top:0.25em;
+ }
+
+.form-row > input {
+  /* flex: 1; */
+  margin-top: 0;
+}
+
+#colour-image{
+  margin-top: 0.5em;
+  max-width: 40%;
+}
+
+#room-image{
+  max-width: 40%;
+}
+
+#chips{
+  max-width: 20%;
+}
