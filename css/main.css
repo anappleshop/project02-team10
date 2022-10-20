@@ -11,7 +11,7 @@ body {
 /* fonts source: https://www.w3schools.com/css/css_font_google.asp */
 
 .style-guide-section-header{
-  background-color: #055299;
+  background-color: #21691B;
   color: #ffffff;
   width: 100%;
   padding: 0.75rem;
@@ -58,12 +58,17 @@ section {
 }
 
 .top-nav {
+  align-items: center;
   width: auto;
   display: flex;
   justify-content: space-between;
-  background-color: #F0F6FC;
+  background-color: #E7F7E6;
   padding: 50px;
   /* source: https://stackoverflow.com/questions/2417130/how-can-i-align-two-divs-horizontally */
+}
+
+.nav-logo{
+
 }
 
 /*styling the input field
@@ -73,7 +78,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   display:inline-block;
   margin-top: 1rem;
   font-size: 1rem;
-  color: #055299;
+  color: #21691B;
   font-weight: bold;
 }
 
@@ -88,7 +93,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 .input-field {
   border-radius: 0;
-  border-color: #055299;
+  border-color: #21691B;
   border-width: 2px;
   font-family: "Inter", sans-serif;
   width: 100%;
@@ -107,11 +112,11 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 .button-nav {
   display: inline-block;
   padding: 0.75rem;
-  color: #055299;
+  color: #21691B;
   background-color: #ffffff;
   text-decoration: none;
   border-style: solid;
-  border-color: #055299;
+  border-color: #21691B;
   border-width: 2px;
   font-weight: 600;
   transition-property: background-color, border-radius; 
@@ -121,7 +126,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #055299;
+  background-color: #21691B;
   color: #ffffff;
   border-radius: 1rem;
 }
@@ -131,10 +136,10 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   display: inline-block;
   padding: 0.75rem;
   color: #ffffff;
-  background-color: #055299;
+  background-color: #21691B;
   text-decoration: none;
   border-style: solid;
-  border-color: #055299;
+  border-color: #21691B;
   border-width: 2px;
   font-weight: 600;
   transition-property: background-color, border-radius; 
@@ -145,7 +150,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 .button-submit:hover, .button-submit:focus {
   background-color: #ffffff;
-  color: #055299;
+  color: #21691B;
   border-radius: 1rem;
 }
 
@@ -174,7 +179,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 /* Styling for the in-text link */
 .in-text-link {
-  color: #055299;
+  color: #21691B;
   font-weight: 700;
 }
 
@@ -187,7 +192,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 .linked-image:hover, .linked-image:focus {
   border: 5px;
   border-style: solid;
-  border-color: #055299;
+  border-color: #21691B;
   border-radius: 3rem;
 }
 
@@ -201,7 +206,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 .main-nav {
   vertical-align: middle;
-  background-color: #F0F6FC;
+  background-color: #E7F7E6;
   display: flex;
   padding: 1rem;
   align-content: right;
@@ -217,7 +222,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   margin-bottom: 0.75rem;
   margin-top: 1rem;
   font-size: 4rem;
-  color: #055299;
+  color: #21691B;
 }
 
 .header2 {
@@ -257,10 +262,10 @@ p {
 */
 
 .product-listing {
-  border: 3px solid #055299;
+  border: 3px solid #21691B;
   padding: 1rem;
   width: fit-content;
-  background-color: #F0F6FC;
+  background-color: #E7F7E6;
 }
 
 .product-image {
@@ -269,7 +274,7 @@ p {
 }
 
 .checkout-cart {
-  background-color: #F0F6FC;
+  background-color: #E7F7E6;
   padding: 2rem;
   width: fit-content;
 }
