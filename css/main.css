@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 body {
   font-family: "Inter", sans-serif;
@@ -104,7 +104,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   border-color: lightblue;
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -119,7 +119,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   border-color: #21691B;
   border-width: 2px;
   font-weight: 600;
-  transition-property: background-color, border-radius; 
+  transition-property: background-color, border-radius;
   transition-duration: 0.5s;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
@@ -142,7 +142,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   border-color: #21691B;
   border-width: 2px;
   font-weight: 600;
-  transition-property: background-color, border-radius; 
+  transition-property: background-color, border-radius;
   transition-duration: 0.5s;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
@@ -212,7 +212,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   align-content: right;
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -257,7 +257,7 @@ p {
 }
 
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -274,10 +274,44 @@ p {
 }
 
 .checkout-cart {
-  background-color: #E7F7E6;
+
+  display: flex; /*monica edit */
+  flex-wrap: wrap;/*monica edit */
+  background-color: #F0F6FC;
   padding: 2rem;
   width: fit-content;
 }
+
+/*monica edit */
+.checkout-item{
+margin: 2rem;
+}
+
+/*monica edit */
+.checkout-cost{
+  padding-top: 25.5rem;
+  padding-left: 2rem;
+}
+
+/*monica edit */
+@media only screen and (max-width: 1120px) {
+  .checkout-cost {
+    padding-top: 0;
+  }
+}
+
+/*monica edit */
+@media only screen and (max-width: 900px) {
+  .checkout-cart {
+    display: flex; /*monica edit */
+    flex-direction: column;
+    flex-wrap: wrap;/*monica edit */
+    background-color: #F0F6FC;
+    padding: 2rem;
+    width: fit-content;
+  }
+}
+
 
 .container{
   display: flex;
