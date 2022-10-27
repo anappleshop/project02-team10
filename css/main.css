@@ -63,7 +63,7 @@ section {
   display: flex;
   justify-content: space-between;
   background-color: #E7F7E6;
-  padding: 50px;
+  padding: 20px;
   /* source: https://stackoverflow.com/questions/2417130/how-can-i-align-two-divs-horizontally */
 }
 
@@ -113,7 +113,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   display: inline-block;
   padding: 0.75rem;
   color: #21691B;
-  background-color: #ffffff;
+  background-color: #E7F7E6;
   text-decoration: none;
   border-style: solid;
   border-color: #21691B;
@@ -312,6 +312,25 @@ margin: 2rem;
   }
 }
 
+/*monica edit */
+/* https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ used this link to make hamburger menu appear and disappear*/
+@media only screen and (max-width: 700px) {
+  .nav-right{
+    display: none;
+  }
+  #hamburger{
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #hamburger{
+    display: none;
+  }
+}
+
+
+
 
 .container{
   display: flex;
@@ -328,4 +347,12 @@ margin: 2rem;
 
 .product-list {
   margin: 5rem;
+}
+
+#checkout-img{
+  margin-top: 5px;
+}
+
+#checkout-img:hover {
+  opacity: 0.5;
 }
