@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="top-nav">
+<!-- <<<<<<< Updated upstream -->
+
+        <img src="images/Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
+
+
+        <nav class="nav-right">
+<!-- >>>>>>> Stashed changes -->
+          <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+          <a class="button-nav" href="#text_elements">Text Elements</a>
+          <a class="button-nav" href="#combined_elements">Combined Elements</a>
+          <a class="button-nav" href="product_listing.html">Product Listing Template</a>
+          <a class="button-nav" href="checkout.html">Checkout Template</a>
+          <a class="button-nav" href="#citations">Citations</a>
+        </nav>
+      </div>
+
+
+    </header>
+
+    <div class="contents">
+
+      <h1>Website Style Guide</h1>
+
+
+      <!-- COMPANY & BRAND SECTION //-->
+      <section id="company_brand">
+        <h2 class="style-guide-section-header">Company + Brand</h2>
+
+        <section class="element">
+          <h3>Logo</h3>
+          <img src="images/Drinkin.png" alt="Logo" style="width: 100%; max-width: 200px;">
+
+          <br><br><br>
+          <h3>Company Info</h3>
+          <p>DrinkIn is an e-commerce international drinks collection. The company surfaces a variety of drinks from around the world. These are specifically non-alchologic drinks.</p>
+          <br>
+          <p>The ideal customer is 20-40 years old, adventurous, and enjoys trying new things. </p>
+          <br>
+          <p>This company offers nostaglic global drinks to customers in the US and Canada, which are not normally available or easily accessible. It also caters towards customers who wants to try new drinks. </p>
+          <br>
+          <p>The company is an online retailer that provides order convenience of international drinks. </p>
+          <br>
+          <h3>Customer Profile</h3>
+          <img src="images/persona.png" alt="Persona" style="width: 100%; max-width: 1000px; border: 2px solid #000000;">
+        </section>
+
+        <section class="element">
+          <h3>Font Selection</h3>
+          <img src="images/fonts.png" alt="Fonts" style="width: 100%; max-width: 400px; margin-bottom: 2rem;">
+          <p>DM Serif Display was selected for the title copy due to its strong serifs which creates a unique brand for the company.</p>
+          <br>
+          <p>Inter was selected for it's easy-to-read san-serif type, which creates visual contrast from the serifs in DM Serif Display.</p>
+          <br><br><br>
+
+          <h3>Colour Palettes</h3>
+          <img src="images/colours.png" alt="Colours" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;">
+          <p>Blue is the primary colour. Chosen to stand out from major international drink colours (green, red, etc.) to create a distinct brand identity. Blue is used for main components, such as primary and secondary buttons, navigation, etc.</p>
+          <br>
+          <p>Light Blue is used as an acent colour. This colour is used to support the primary blue – light blue is used in hover states, and image treatment.</p>
+          <br>
+          <p>Brown is the website’s negative colour. Used to contrast with the primary blue in acent and in negative connotations, such as reset.</p>
+          <br>
+          <p>Grey is used to lower the hierarchy of text. Specifically, to show disabled interactions or labels.</p>
+          <br>
+          <p>Black is the main text colour. Used for the body copy and most headers.</p>
+          <br><br><br>
+
+          <h3>Imagery and Art Direction</h3>
+          <img src="images/images.png" alt="Images" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;">
+          <p>Call drinks for sale have their images on a blue-gradient background. This helps differentiate each drink, while keeping them consistent in style.</p>
+
+        </section>
+
+
+      </section>
+
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2 class="style-guide-section-header">Interactive Elements</h2>
+
+
+        <!-- Default Text Link styling section -->
+        <!-- reference: https://www.w3schools.com/html/html_links.asp-->
+        <section class="element">
+          <h3>In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.in-text-link</p>
+
+          <code>&lt;a class="in-text-link" href="#"&gt;link text&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="in-text-link" href="#">link text</a>
+        </section>
+
+
+        <!-- DONE - Default Navigation Link styling section -->
+        <section class="element">
+
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class="button-nav" href="#"&gt;Navigation Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#">Navigation Button</a>
+
+        </section>
+
+        <!-- DONE - Default Submit / Reset styling section -->
+        <!-- Resource: https://ux.iu.edu/writings/buttons-vs-links-basic/#:~:text=There%20are%20differences%20as%20to,affect%20the%20website%20at%20all.-->
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3>
+
+          <!-- Submit Button -->
+          <h4>CSS selector:</h4>
+          <p>.button-submit</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class="button-submit" href="#"&gt;Submit Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-submit" href="#">Submit Button</a>
+
+          <!-- Reset Button -->
+          <h4>CSS selector:</h4>
+          <p>.button-reset</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class="button-reset" href="#"&gt;Reset Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-reset" href="#">Reset Button</a>
+
+        </section>
+
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.input-field</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;label&gt;Enter today's date:&lt;/label&gt;<br />
+          &lt;input type=&quot;date&quot; class=&quot;input-field&quot;&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <label class="input-field-label">Enter today's date:</label> <br>
+          <input class="input-field" type="date" name="today's date">
+        </section>
+
+
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.radio-button</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;input type=&quot;radio&quot; class=&quot;radio-button&quot;&gt;<br />
+          &lt;label&gt;Radio Button&lt;/label&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <input type="radio" class="radio-button">
+          <label>Radio Button</label>
+        </section>
+
+
+        <!-- Image as Link -->
+        <!-- Reference: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+        <section class="element">
+          <h3>Image as a Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.linked-image</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img src="images/allway.png" alt="Hallway" class="linked-image"&gt;&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a href="#"><img src="images/guarana.png" alt="Guarana" class="linked-image" ></a>
+        </section>
+
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION style="width:200px;height:auto;"  -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2 class="style-guide-section-header">Text Elements</h2>
+
+        <!-- Four levels of heading -->
+        <!-- Reference: https://www.w3schools.com/TAGs/tag_header.asp -->
+        <section class="element">
+          <h3>Headings</h3>
+
+          <!-- Header 1 -->
+          <h4>CSS selector:</h4>
+          <p>.header1</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1 class="header1"&gt;Header 1&lt;/h1&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h1 class="header1">Header 1</h1>
+
+          <!-- Header 2 -->
+          <h4>CSS selector:</h4>
+          <p>.header2</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h2 class="header2"&gt;Header 2&lt;/h2&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h2 class="header2">Header 2</h2>
+
+          <!-- Header 3 -->
+          <h4>CSS selector:</h4>
+          <p>.header3</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h3 class="header3"&gt;Header 3&lt;/h3&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h3 class="header3">Header 3</h3>
+
+          <!-- Header 4 -->
+          <h4>CSS selector:</h4>
+          <p>.header4</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h4 class="header1"&gt;Header 4&lt;/h4&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h4 class="header4">Header 4</h4>
+
+        </section>
+
+        <!-- Default paragraph styling -->
+        <section class="element">
+          <h3>Paragraphs</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.paragraph</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p class="paragraph"&gt;Paragraph&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros in. Amet nulla facilisi morbi tempus iaculis urna. Tincidunt arcu non sodales neque sodales ut etiam sit. Lectus sit amet est placerat in. Egestas tellus rutrum tellus pellentesque. Magna fringilla urna porttitor rhoncus dolor purus. Arcu cursus vitae congue mauris rhoncus. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Sed ullamcorper morbi tincidunt ornare massa eget. Donec ultrices tincidunt arcu non.</p>
+
+        </section>
+
+        <section class="element">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.numbered-list</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;ol class="numbered-list"&gt;<br />
+            &lt;li&gt;List Item 1&lt;/li&gt;<br />
+            &lt;li&gt;List Item 2&lt;/li&gt;<br />
+            &lt;li&gt;List Item 3&lt;/li&gt;<br />
+          &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <ol class="numbered-list">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+          </ol>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2 class="style-guide-section-header">Combined Elements</h2>
+
+        <!-- Main Navigation is an unordered list, formatted -->
+        <!-- https://www.w3schools.com/howto/howto_js_topnav.asp-->
+        <section class="element">
+          <h3>Main Navigation</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.main-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;ul class=&quot;main-nav&quot;&gt;<br />
+            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br />
+            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
+            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+          &lt;/ul&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="main-nav">
+            <a class="button-nav" href="#">Home</a>
+            <a class="button-nav" href="#">Products</a>
+            <a class="button-nav" href="#">Contact</a>
+            <a class="button-nav" href="#">About</a>
+            <a><img src="images/cart_icon.png" alt="checkout cart" width="50px"></a>
+          </div>
+
+        </section>
+
+        <!-- PRODUCT LISTING-->
+        <section class="element">
+          <h3>Product/Service Listing</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.product-listing</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;img src=&quot;product.jpg&quot; class=&quot;product-image&quot; alt=&quot;Hallway&quot; style=&quot;width:200px;height:auto;&quot;&gt;&lt;br&gt;<br />
+            &lt;h3 class=&quot;header3&quot;&gt;Milkis Drink &ndash; from Korea&lt;/h3&gt;&lt;br&gt;<br />
+            &lt;h4 class=&quot;header4&quot;&gt;$2.50&lt;/h4&gt;&lt;br&gt;<br />
+            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Detailed Description&lt;/a&gt;<br />
+            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Add to Cart&lt;/a&gt;
+          &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="product-listing">
+            <h3 class="header3">Milkis</h3>
+            <label class="input-label">South Korea</label> <br>
+            <br>
+            <img src="images/milkis.png" class="product-image" alt="milkis drink"><br>
+
+            <h4 class="header4">$2.50</h4><br>
+            <a class="button-nav" href="#">Detailed Description</a> <br>
+            <a class="button-submit" href="#">Add to Cart</a>
+          </div>
+
+        </section>
+
+        <!-- PAYMENT FORM-->
+        <section class="element">
+          <h3>Payment Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.payment-form</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;div&gt;<br />
+            &lt;h4 class=&quot;header4&quot;&gt;Payment&lt;/h4&gt;<br />
+            &lt;input type=&quot;radio&quot; class=&quot;radio-button&quot;&gt;<br />
+            &nbsp;&lt;label&gt;Visa&lt;/label&gt; <br />
+            &lt;br&gt;<br />
+            &lt;input type=&quot;radio&quot; class=&quot;radio-button&quot;&gt;<br />
+            &nbsp;&lt;label&gt;Mastercard&lt;/label&gt;<br />
+            &lt;br&gt;<br />
+            &lt;label&gt;Credit Card Number:&lt;/label&gt;<br />
+            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
+            &lt;label&gt;Expiration Date:&lt;/label&gt;<br />
+            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
+            &lt;label&gt;CVV:&lt;/label&gt;<br />
+            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
+            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Submit&lt;/a&gt;<br />
+          &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="payment-form">
+            <h3 class="header3">Billing Info</h3>
+
+            <label class="input-label">Name</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">Billing Address</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">City</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">Province/State</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">Country</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <br>
+
+            <h3 class="header3">Payment Info</h3>
+            <br>
+
+            <input type="radio" name="credit_card" class="radio-button">
+            <label>Visa</label>
+            <br>
+            <input type="radio" name="credit_card" class="radio-button">
+            <label>Mastercard</label>
+            <br>
+            <input type="radio" name="credit_card" class="radio-button">
+            <label>American Express</label>
+            <br>
+
+            <label class="input-label">Credit Card Number</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">Expiration Date</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <label class="input-label">CVV</label> <br>
+            <input type="text" class="input-field"> <br>
+
+            <br> <br>
+
+            <a class="button-nav" href="#">Back</a>
+            <a class="button-submit" href="#">Submit</a>
+          </div>
+
+        </section>
+
+        <!-- CHECKOUT CART-->
+        <section class="element">
+          <h3>Checkout Cart</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.checkout-cart</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          &lt;div class=&quot;checkout-cart&quot;&gt;<br />
+            &lt;p class=&quot;paragraph&quot;&gt;Item 1&lt;/p&gt;&lt;br&gt;<br />
+            &lt;h2 class=&quot;header2&quot;&gt;Milkis&lt;/h2&gt;&lt;br&gt;<br />
+            &lt;h3 class=&quot;header3&quot;&gt;$2.50&lt;/h3&gt;&lt;br&gt;<br />
+            &lt;p class=&quot;paragraph&quot;&gt;Item 2&lt;/p&gt;&lt;br&gt;<br />
+            &lt;h2 class=&quot;header2&quot;&gt;Guarana&lt;/h2&gt;&lt;br&gt;<br />
+            &lt;h3 class=&quot;header3&quot;&gt;$3.50&lt;/h3&gt;&lt;br&gt;<br />
+            &lt;p class=&quot;paragraph&quot;&gt;Total Cost:   &lt;/p&gt; <br />
+            &lt;h3 class=&quot;header3&quot;&gt;$6.00&lt;/h3&gt;&lt;br&gt;<br />
+            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Checkout&lt;/a&gt;<br />
+          &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="checkout-cart">
+            <div class="checkout-item">
+              <p class="paragraph">Item 1:</p>
+              <h3 class="header3">Milkis</h4>
+              <label class="input-label">South Korea</label> <br><br>
+              <img src="images/milkis.png" class="product-image" alt="milkis drink"><br>
+              <h4 class="header4">$2.50</h3><br><br>
+            </div>
+
+            <div class="checkout-item">
+              <p class="paragraph">Item 2:</p>
+              <h3 class="header3">Guarana</h2>
+              <label class="input-label">Brazil</label> <br><br>
+              <img src="images/guarana.png" class="product-image" alt="guarana drink"><br>
+              <h4 class="header4">$3.50</h3><br> <br>
+
+            </div>
+
+            <!-- monica edit: added div and checkout-cost class -->
+            <div class="checkout-cost">
+            <h3 class="header3">Total Cost:</h3>
+            <h4 class="header4">$6.00</h4><br> <br>
+            <a class="button-nav" href="#">Back</a>
+            <a class="button-submit" href="#">Checkout</a>
+          </div>
+          </div>
+
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+      <section id="citations">
+        <h2 class="style-guide-section-header">Citations</h2>
+
+        <ul>
+          <li>Andersson, Rasmus. Designer. 2016. <strong>Inter [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Inter">https://fonts.google.com/specimen/Inter</a></li>
+          <li>FrieBhammer, Frank. Designer. 2013. <strong>DM Serif Display [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/DM+Serif+Display">https://fonts.google.com/specimen/DM+Serif+Display</a></li>
+          <li><strong>Want Want Photo [Media]</strong>. Retrieved from <a href="https://cdn11.bigcommerce.com/s-xa6bqyztvi/images/stencil/608x608/products/3825/919/686352809081__69841.1631732753.386.513__06268.1657124666.jpg?c=1">https://cdn11.bigcommerce.com/s-xa6bqyztvi/images/stencil/608x608/products/3825/919/686352809081__69841.1631732753.386.513__06268.1657124666.jpg?c=1</a>.</li>
+          <li><strong>Milo Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0308/2069/6123/products/Milo_200_large_2x.jpg?v=1582625524">https://cdn.shopify.com/s/files/1/0308/2069/6123/products/Milo_200_large_2x.jpg?v=1582625524</a>.</li>
+          <li><strong>Guarana Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0285/7222/1545/products/GuaranaCan.jpg?v=1607632553">https://cdn.shopify.com/s/files/1/0285/7222/1545/products/GuaranaCan.jpg?v=1607632553</a>.</li>
+          <li><strong>Milkis Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0338/0694/2253/products/LotteMilkisDrinkCanOriginalFlavor8.45oz_front_2048x.jpg?v=1650574585">https://cdn.shopify.com/s/files/1/0338/0694/2253/products/LotteMilkisDrinkCanOriginalFlavor8.45oz_front_2048x.jpg?v=1650574585</a>.</li>
+        </ul>
+
+      </section>
+    </div>
+
+
+  </body>
+</html>

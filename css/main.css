@@ -269,8 +269,10 @@ p {
 .product-listing {
   border: 3px solid #21691B;
   padding: 1rem;
+  margin: 2rem;
   width: fit-content;
-  background-color: #E7F7E6;
+  /* width: 75%; */
+  background-color: #FFFFFF;
 }
 
 .product-image {
