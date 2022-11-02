@@ -62,7 +62,7 @@ section {
   width: auto;
   display: flex;
   justify-content: space-between;
-  background-color: #E7F7E6;
+  background-color: #21691B;
   padding: 20px;
   padding-left: 5%;
   padding-right: 5%;
@@ -90,8 +90,8 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 .input-label {
   display:inline-block;
   margin-top: 1rem;
-  font-size: 0.8rem;
-  color: #7F7F7F;
+  font-size: 1rem;
+  color: #000000;
 }
 
 /* sources: https://learn.shayhowe.com/html-css/building-forms/*/
@@ -131,8 +131,8 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #21691B;
-  color: #ffffff;
+  background-color: #E7F7E6;
+  color: #000000;
   border-radius: 1rem;
 }
 
@@ -211,7 +211,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 .main-nav {
   vertical-align: middle;
-  background-color: #E7F7E6;
+  background-color: #21691B;
   display: flex;
   padding: 1rem;
   align-content: right;
@@ -267,17 +267,71 @@ p {
 */
 
 .product-listing {
-  border: 3px solid #21691B;
+  display: flex;
+  /* border: 3px solid #21691B; */
   padding: 1rem;
   margin: 2rem;
   width: fit-content;
   /* width: 75%; */
   background-color: #FFFFFF;
+  box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.product-listing-child{
+  padding: 1rem;
+}
+
+.product-listing-child-submit{
+  margin-top: 6rem;
+  width: 300px;
+  text-align: center;
+}
+
+.product-listing-child-nav{
+  width: 300px;
+  text-align: center;
 }
 
 .product-image {
+  /* width: 50%;
+  max-width: 594px; */
   width: 100%;
   max-width: 300px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-description{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .product-description{
+    display: none;
+  }
+  .product-listing{
+    flex-direction: column;
+
+  }
+  .product-image{
+    width: 50%;
+  }
+
+  .product-listing-child{
+    padding: 0;
+  }
+
+  .product-listing-child-submit{
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+  #hamburger{
+    display: none;
+  }
 }
 
 .checkout-cart {
@@ -330,12 +384,6 @@ margin: 2rem;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  #hamburger{
-    display: none;
-  }
-}
-
 
 
 
@@ -362,4 +410,22 @@ margin: 2rem;
 
 #checkout-img:hover {
   opacity: 0.5;
+}
+
+
+/* new edits monica */
+.image-sample{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.image{
+  max-width: 250px;
+  max-height: 250px;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }

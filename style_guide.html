@@ -15,13 +15,12 @@
     <header>
 
       <div class="top-nav">
-<!-- <<<<<<< Updated upstream -->
 
         <img src="images/Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
 
 
         <nav class="nav-right">
-<!-- >>>>>>> Stashed changes -->
+
           <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
           <a class="button-nav" href="#text_elements">Text Elements</a>
           <a class="button-nav" href="#combined_elements">Combined Elements</a>
@@ -45,7 +44,7 @@
 
         <section class="element">
           <h3>Logo</h3>
-          <img src="images/Drinkin.png" alt="Logo" style="width: 100%; max-width: 200px;">
+          <img src="images/old_Drinkin.png" alt="Logo" style="width: 100%; max-width: 200px;">
 
           <br><br><br>
           <h3>Company Info</h3>
@@ -83,7 +82,14 @@
           <br><br><br>
 
           <h3>Imagery and Art Direction</h3>
-          <img src="images/images.png" alt="Images" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;">
+          <!-- <img src="images/images.png" alt="Images" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;"> -->
+
+          <div class="image-sample">
+          <img class="image" src="images/milkis-new.png" alt="Images">
+          <img class="image" src="images/milkis-new.png" alt="Images">
+          <img class="image" src="images/milkis-new.png" alt="Images">
+          <img class="image" src="images/milkis-new.png" alt="Images">
+          </div>
           <p>Call drinks for sale have their images on a blue-gradient background. This helps differentiate each drink, while keeping them consistent in style.</p>
 
         </section>
@@ -336,7 +342,7 @@
             <a class="button-nav" href="#">Products</a>
             <a class="button-nav" href="#">Contact</a>
             <a class="button-nav" href="#">About</a>
-            <a><img src="images/cart_icon.png" alt="checkout cart" width="50px"></a>
+            <a><img src="images/cart_icon.png" alt="checkout cart" width="50px" id="checkout-img"></a>
           </div>
 
         </section>
@@ -360,14 +366,20 @@
 
           <h4>Rendered element:</h4>
           <div class="product-listing">
+            <div class="product-listing-child">
+            <img src="images/milkis-new.png" class="product-image" alt="milkis drink"><br>
+            </div>
+            <div class="product-listing-child">
             <h3 class="header3">Milkis</h3>
-            <label class="input-label">South Korea</label> <br>
+            <label class="input-label">Drink from South Korea</label> <br>
             <br>
-            <img src="images/milkis.png" class="product-image" alt="milkis drink"><br>
-
-            <h4 class="header4">$2.50</h4><br>
-            <a class="button-nav" href="#">Detailed Description</a> <br>
-            <a class="button-submit" href="#">Add to Cart</a>
+            <h4 class="header4">-$2.50-</h4><br>
+            <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="product-listing-child">
+            <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
+            <a class="button-nav product-listing-child-nav" href="#">View detailed description</a>
+            </div>
           </div>
 
         </section>
@@ -478,7 +490,7 @@
               <p class="paragraph">Item 1:</p>
               <h3 class="header3">Milkis</h4>
               <label class="input-label">South Korea</label> <br><br>
-              <img src="images/milkis.png" class="product-image" alt="milkis drink"><br>
+              <img src="images/milkis-new.png" class="product-image" alt="milkis drink"><br>
               <h4 class="header4">$2.50</h3><br><br>
             </div>
 
@@ -486,7 +498,7 @@
               <p class="paragraph">Item 2:</p>
               <h3 class="header3">Guarana</h2>
               <label class="input-label">Brazil</label> <br><br>
-              <img src="images/guarana.png" class="product-image" alt="guarana drink"><br>
+              <img src="images/milkis-new.png" class="product-image" alt="guarana drink"><br>
               <h4 class="header4">$3.50</h3><br> <br>
 
             </div>
