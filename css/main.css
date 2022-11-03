@@ -98,15 +98,17 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 
 .input-field {
   border-radius: 0;
-  border-color: #21691B;
+  border-color: #FFFFFF;
   border-width: 2px;
   font-family: "Inter", sans-serif;
   width: 100%;
   max-width: 20rem;
+  border: 2px solid #21691B;
+  border-radius: 4px;
 }
 
 .input-field:hover, .input-field:focus {
-  border-color: lightblue;
+  border-color: #EAEAEA;
 }
 
 /*
@@ -130,6 +132,28 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   margin-bottom: 0.5rem;
 }
 
+.secondary-button {
+  display: inline-block;
+  padding: 0.75rem;
+  color: #21691B;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #21691B;
+  border-width: 2px;
+  font-weight: 600;
+  transition-property: background-color, border-radius;
+  transition-duration: 0.5s;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.secondary-button:hover, .button-nav:focus {
+  background-color: #E7F7E6;
+  color: #000000;
+  border-radius: 1rem;
+}
+
 .button-nav:hover, .button-nav:focus {
   background-color: #E7F7E6;
   color: #000000;
@@ -149,13 +173,13 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   font-weight: 600;
   transition-property: background-color, border-radius;
   transition-duration: 0.5s;
-  margin-right: 1rem;
+  margin-right: 0rem;
   margin-bottom: 0.5rem;
 }
 
 .button-submit:hover, .button-submit:focus {
-  background-color: #ffffff;
-  color: #21691B;
+  background-color: #21691B;
+  color: #000000;
   border-radius: 1rem;
 }
 
@@ -189,7 +213,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 }
 
 .in-text-link:hover, .in-text-link:focus {
-  color: #002344;
+  color: #454A45;
 }
 
 /* Styling for the in-text link */
@@ -247,8 +271,15 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 .header4 {
   margin-bottom: 0.25rem;
   margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.header5 {
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 input {
@@ -279,7 +310,8 @@ p {
 }
 
 .product-listing-child{
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: 1rem;
 }
 
 .product-listing-child-submit{
@@ -294,13 +326,10 @@ p {
 }
 
 .product-image {
-  /* width: 50%;
-  max-width: 594px; */
-  width: 100%;
   max-width: 300px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
   .product-description{
     display: none;
   }
@@ -315,7 +344,7 @@ p {
 
   }
   .product-image{
-    width: 50%;
+    padding-left: 1.5rem;
   }
 
   .product-listing-child{
@@ -338,9 +367,12 @@ p {
 
   display: flex; /*monica edit */
   flex-wrap: wrap;/*monica edit */
-  background-color: #F0F6FC;
+  background-color: #FFFFFF;
   padding: 2rem;
-  width: fit-content;
+  width: auto;
+  border: 1px solid #21691B;
+  border-radius: 10px;
+
 }
 
 /*monica edit */
@@ -350,8 +382,16 @@ margin: 2rem;
 
 /*monica edit */
 .checkout-cost{
-  padding-top: 25.5rem;
-  padding-left: 2rem;
+  display: flex;
+  /* used this link to figure out how to add space between flex items https://css-tricks.com/almanac/properties/j/justify-content/ */
+  justify-content: space-between;
+  padding-top: 1rem;
+  /* padding-left: 0; */
+  margin-top: 3rem;
+}
+
+.checkout-buttons{
+  padding-top: 1rem;
 }
 
 /*monica edit */
@@ -362,14 +402,23 @@ margin: 2rem;
 }
 
 /*monica edit */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
   .checkout-cart {
     display: flex; /*monica edit */
     flex-direction: column;
     flex-wrap: wrap;/*monica edit */
-    background-color: #F0F6FC;
-    padding: 2rem;
+    /* background-color: #F0F6FC; */
+    /* padding: 2rem; */
     width: fit-content;
+  }
+  .checkout-cost{
+    flex-direction: column;
+  }
+  .checkout-buttons{
+    padding-top: 0;
+  }
+  .cost-element{
+    padding-top: 1rem;
   }
 }
 
