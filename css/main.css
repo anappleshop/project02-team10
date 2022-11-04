@@ -520,3 +520,97 @@ margin: 2rem;
 .contact-us{
   color: #454A45;
 }
+
+.product_catalogue{
+  background-color: #FAFFF8;
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #21691B;
+  border-radius: 10px;
+}
+
+.continent-label{
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.standard-image{
+  max-width: 100%;
+  height: auto;
+}
+
+.home-image{
+opacity: 0.5;
+}
+
+.home-page{
+  background-color: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
+}
+
+#backgrounddrinks-img{
+  max-width: 45%;
+}
+
+.flex-container{
+  display: flex;
+  padding: 4rem;
+  justify-content: flex-start;
+
+}
+
+.block{
+  display: flex;
+  justify-content: center;
+}
+
+#home-text{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  text-align: center;
+}
+
+#landing-image{
+  position: relative;
+}
+
+#message{
+  height: 5rem;
+}
+
+#submit{
+  margin:2rem;
+}
+
+.contact-us{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-item{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-top-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-child{
+  display: flex;
+  flex-direction: row;
+}
