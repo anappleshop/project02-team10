@@ -498,6 +498,7 @@ margin: 2rem;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
 .social:hover, .social:focus{
@@ -517,7 +518,7 @@ margin: 2rem;
 }
 
 
-.contact-us{
+.grey{
   color: #454A45;
 }
 
@@ -602,6 +603,8 @@ opacity: 0.5;
 .contact-item{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: auto;
 
 }
 
