@@ -250,6 +250,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   font-family: "DM Serif Display", sans-serif;
   margin-bottom: 0.75rem;
   margin-top: 1rem;
+  margin-left: 1rem;
   font-size: 4rem;
   color: #21691B;
   width: 100%;
@@ -311,7 +312,6 @@ p {
 }
 
 .product-listing-child{
-  /* padding: 1rem; */
   margin: 1rem;
 }
 
@@ -350,12 +350,17 @@ p {
 
   .product-listing-child{
     padding: 0;
+
   }
 
   .product-listing-child-submit{
     margin-top: 1rem;
   }
 
+  /* home page things */
+  #home-caption-button{
+  font-size: 2vw;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -499,7 +504,15 @@ margin: 2rem;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 99vw;
+  padding-left: 0;
+  padding-right: 0;
+  /* width: 100vw; */
+}
+
+.footer-sub-child{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .social:hover, .social:focus{
@@ -529,6 +542,9 @@ margin: 2rem;
   margin: 2rem;
   border: 1px solid #21691B;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .continent-label{
@@ -541,27 +557,12 @@ margin: 2rem;
   margin-top: 4rem;
 }
 
-.standard-image{
-  max-width: 100%;
-  height: auto;
-}
-
-.home-image{
-opacity: 0.5;
-}
-
-.home-page{
-  background-color: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
-}
-
-#backgrounddrinks-img{
-  max-width: 45%;
-}
 
 .flex-container{
   display: flex;
   padding: 4rem;
   justify-content: flex-start;
+  margin-top: 4rem;
 
 }
 
@@ -572,10 +573,20 @@ opacity: 0.5;
 
 #home-text{
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  /* used this link to help me center the text with absolute and relative https://www.w3schools.com/howto/howto_css_image_text.asp */
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 60%;
 }
+
+#home-caption{
+  font-size: 7vw;
+  width: 100%;
+
+}
+
 
 #landing-image{
   position: relative;
@@ -595,7 +606,7 @@ opacity: 0.5;
   align-content: center;
   justify-content: center;
   padding: 1rem;
-  margin: 2rem;
+  margin: 7rem;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -609,6 +620,10 @@ opacity: 0.5;
 
 }
 
+.contact-input{
+  width: 50vw;
+}
+
 .about-top-container{
   display: flex;
   flex-direction: column;
@@ -618,6 +633,7 @@ opacity: 0.5;
   display: flex;
   flex-direction: row;
 }
+
 
 /*product-info*/
 
@@ -761,4 +777,209 @@ opacity: 0.5;
 }
 
 
+/* home page things */
+.page-title{
+  margin: 5rem;
+  margin-top: 7rem;
+}
 
+.home-products{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.home-image{
+opacity: 0.5;
+width: 100%;
+height: auto;
+}
+
+.home-page{
+  background-color: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
+}
+
+#explore{
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.background-text{
+}
+
+.background-block{
+  display: flex;
+  margin: 5rem;
+  margin-top: 5rem;
+}
+
+.background-child{
+  margin-left: 4rem;
+  margin-top: 3rem;
+  width: 90vw;
+}
+
+#learn-button{
+  margin-top: 6rem;
+}
+
+.products-block{
+  margin-bottom: 5rem;
+  /* background-color: rgba(250, 255, 250, 0) 100%); */
+
+}
+
+.about-child-2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-child-1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-child-text{
+  margin: auto;
+  margin-left: 5rem;
+
+}
+
+
+.updates-block{
+  margin: 7rem;
+}
+
+.button-size{
+  width: 200px;
+  margin: auto;
+}
+
+#drinks-box{
+  width: 50vw;
+  height: auto;
+}
+
+#people{
+  width: 49vw;
+  height: auto;
+}
+
+/* about page mobile adaptions */
+@media only screen and (max-width:900px){
+  .about-child-1{
+    flex-wrap: wrap;
+  }
+  .about-child-2{
+    flex-wrap: wrap-reverse;
+  }
+  .about-child-item{
+    margin: auto;
+  }
+  #drinks-box{
+    margin-top: 3rem;
+  }
+  #people{
+    margin-top: 3rem;
+  }
+  .about-description{
+    margin: 0;
+  }
+  .about-child-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+    /* used this link to help me center the items while in column direction https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically */
+  }
+  .product_catalogue{
+    padding: 0;
+  }
+
+  .contact-us{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 0;
+  }
+
+  .product-listing{
+    width: auto;
+
+    align-items: center;
+  }
+
+
+  .fave-drink-button{
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    /* width: 15rem; */
+  }
+
+  #fave-img{
+    padding: 0;
+  }
+
+  #fave-drink-cap{
+    margin: 1rem;
+    padding: 0;
+  }
+
+  #explore-button{
+      margin-bottom: 2rem;
+  }
+}
+
+#fave-drink-listing{
+  width: auto;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1250px){
+  .flex-box{
+    flex-direction: column;
+  }
+  #add-fave-button{
+    margin-top: 0;
+  }
+  .product-listing-child{
+    /* padding: 0; */
+    /* width: fit-content; */
+  }
+
+  .product-listing-child-submit{
+    margin-top: 0;
+    width: 300px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+
+
+  .background-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .background-child{
+
+  }
+
+  #backgrounddrinks-img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.product-listing-child{
+  width: fit-content;
+}
