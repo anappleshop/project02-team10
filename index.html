@@ -20,147 +20,100 @@
       <div class="top-nav">
 <!-- <<<<<<< Updated upstream -->
 
-        <a href="index.html"> <img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo">
+<a href="index.html"> <img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo"></a>
 
-        <nav class="nav-right">
-          <a class="button-nav" href="home.html">Home</a>
-          <a class="button-nav" href="product_catalogue.html">Product Catalogue</a>
-          <a class="button-nav" href="about.html">About</a>
-          <!-- <a class="button-nav" href="about.html">Contact</a> -->
-          <img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img">
-        </nav>
+  <nav class="nav-right">
+    <!-- <a class="button-nav" href="index.html">Home</a> -->
+    <a class="button-nav" href="product_catalogue.html">Products</a>
+    <a class="button-nav" href="about.html">About</a>
+    <a href="checkout_page.html"> <img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img" class="fade"></a>
+  </nav>
+        <img src="images/hamburger.png" alt="Hamburger" height="30px" id="hamburger" class="fade" onclick="myFunction()">
 
-        <img src="images/hamburger.png" alt="Hamburger" height="30px" id="hamburger">
+<!-- trying to make hamburger menu work -->
+  <!-- <div id="hidden-menu">
+    <a class="button-nav" href="product_catalogue.html">Product Catalogue</a>
+    <a class="button-nav" href="about.html">About</a>
+  </div> -->
 
-        <!-- <img src="cart_icon.png" alt="Checkout Cart" height="40px"> -->
       </div>
+
+
     </header>
 
 <div id="landing-image">
   <img class="home-image" src="images/landing-drinks.png" alt="Many Drinks" width="1440" height="795px">
   <div id="home-text">
     <h1 class="header1" id="home-caption">Drinks from around the world</h1>
-    <a class="button-submit" id="home-caption-button" href="#">Explore all products</a>
+    <a class="button-submit" id="home-caption-button" href="product_catalogue.html">Explore all products</a>
   </div>
 </div>
 
-    <div class="home-page">
-      <h3 class="header3">Featured Products</h3>
-
-      <div class="product-listing">
-        <div class="product-listing-child">
-        <img src="images/drink-1.png" class="product-image" alt="milkis drink"><br>
-        </div>
-        <div class="product-listing-child">
-        <h3 class="header3">Milkis</h3>
-        <label class="input-label">Drink from South Korea</label> <br>
-        <br>
-        <h4 class="header4">-$2.50-</h4><br>
-        <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="product-listing-child">
-        <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-        <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
-        </div>
-      </div>
-
-      <div class="product-listing">
-        <div class="product-listing-child">
-        <img src="images/drink-2.png" class="product-image" alt="milkis drink"><br>
-        </div>
-        <div class="product-listing-child">
-        <h3 class="header3">Genki Forest</h3>
-        <label class="input-label">Drink from South Korea</label> <br>
-        <br>
-        <h4 class="header4">-$2.50-</h4><br>
-        <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="product-listing-child">
-        <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-        <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
-        </div>
-      </div>
-
-      <div class="product-listing">
-        <div class="product-listing-child">
-        <img src="images/drink-3.png" class="product-image" alt="milkis drink"><br>
-        </div>
-        <div class="product-listing-child">
-        <h3 class="header3">WantWant</h3>
-        <label class="input-label">Drink from South Korea</label> <br>
-        <br>
-        <h4 class="header4">-$2.50-</h4><br>
-        <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="product-listing-child">
-        <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-        <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
-        </div>
-      </div>
-
-      <div class="block">
-          <a class="button-submit" href="#">Explore all products</a>
-      </div>
 
 <div class="home-page">
 
   <div class="products-block">
     <h3 class="header3 page-title">Featured Products</h3>
-
-    <div class="product-listing home-products">
+    <div class="product-listing fave-drink-listing">
       <div class="product-listing-child">
-      <img src="images/drink-1.png" class="product-image" alt="milkis drink"><br>
+      <img src="images/drink-1.png" class="product-image fave-img" alt="milkis drink"><br>
       </div>
-      <div class="product-listing-child">
+      <div class="flex-box">
+      <div class="product-listing-child fave-drink-cap">
       <h3 class="header3">Milkis</h3>
       <label class="input-label">Drink from South Korea</label> <br>
       <br>
-      <h4 class="header4">-$2.50-</h4><br>
-      <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h4 class="header4">-$2.25-</h4><br>
+      <p class="product-description">Drink from Lotte. Goes well with alcohol like Soju. One of the most popular soft drinks from South Korea for the summer season!</p>
       </div>
       <div class="product-listing-child">
-      <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-      <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
+      <a class="button-submit product-listing-child-submit fave-drink-button add-fave-button" href="checkout_page.html">Add to cart</a> <br>
+      <a class="secondary-button product-listing-child-nav fave-drink-button" href="product_details.html">View detailed description</a>
+        </div>
       </div>
     </div>
 
-    <div class="product-listing home-products">
+<!-- home-products -->
+    <div class="product-listing  fave-drink-listing">
       <div class="product-listing-child">
-      <img src="images/drink-2.png" class="product-image" alt="milkis drink"><br>
+      <img src="images/drink-2.png" class="product-image fave-img" alt="Genki Forest drink"><br>
       </div>
-      <div class="product-listing-child">
+      <div class="flex-box">
+      <div class="product-listing-child fave-drink-cap">
       <h3 class="header3">Genki Forest</h3>
-      <label class="input-label">Drink from South Korea</label> <br>
+      <label class="input-label">Drink from Japan</label> <br>
       <br>
-      <h4 class="header4">-$2.50-</h4><br>
-      <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h4 class="header4">-$4.25-</h4><br>
+      <p class="product-description">Refreshing sparkling water from Japan. High in nutrients and low in calories. Flavourful punch without the guilty calorie downsides.</p>
       </div>
       <div class="product-listing-child">
-      <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-      <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
+      <a class="button-submit product-listing-child-submit fave-drink-button add-fave-button" href="checkout_page.html">Add to cart</a> <br>
+      <a class="secondary-button product-listing-child-nav fave-drink-button" href="product_details.html">View detailed description</a>
       </div>
     </div>
+  </div>
 
-    <div class="product-listing home-products">
-      <div class="product-listing-child">
-      <img src="images/drink-3.png" class="product-image" alt="milkis drink"><br>
-      </div>
-      <div class="product-listing-child">
-      <h3 class="header3">WantWant</h3>
-      <label class="input-label">Drink from South Korea</label> <br>
-      <br>
-      <h4 class="header4">-$2.50-</h4><br>
-      <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="product-listing-child">
-      <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-      <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
-      </div>
+  <div class="product-listing  fave-drink-listing">
+    <div class="product-listing-child">
+    <img src="images/drink-3.png" class="product-image fave-img" alt="WantWant drink"><br>
     </div>
-
+    <div class="flex-box">
+    <div class="product-listing-child fave-drink-cap">
+    <h3 class="header3">WantWant</h3>
+    <label class="input-label">Drink from China</label> <br>
+    <br>
+    <h4 class="header4">-$2.80-</h4><br>
+    <p class="product-description">Milk-based drink from China. Very popular among kids in Asia. Sweet milk taste is complemented by creamy texture.</p>
+    </div>
+    <div class="product-listing-child">
+    <a class="button-submit product-listing-child-submit fave-drink-button add-fave-button" href="checkout_page.html">Add to cart</a> <br>
+    <a class="secondary-button product-listing-child-nav fave-drink-button" href="product_details.html">View detailed description</a>
+    </div>
+  </div>
+</div>
 
     <div class="block" id="explore">
-        <a class="button-submit" href="#">Explore all products</a>
+        <a class="button-submit" href="product_catalogue.html">Explore all products</a>
     </div>
 
   </div>
@@ -173,31 +126,16 @@
     <div class="background-child">
       <h3 class="header3">Background</h3>
         <p>We have always loved Since 2019</p>
-      <a class="button-submit" id="learn-button" href="#">Learn more about us</a>
+      <a class="button-submit" id="learn-button" href="about.html">Learn more about us</a>
     </div>
   </div>
-
-      <div class="footer-child footer-child-lastline">
-        <div class="footer-sub-child">
-          <a class="in-text-link" href="#">Home</a>
-          <a class="in-text-link" href="#">Products</a>
-          <a class="in-text-link" href="#">About</a>
-        </div>
-        <div class="footer-sub-child">
-          <img class="social" src="images/facebook.png" alt="Facebook" height="32px">
-          <img class="social" src="images/twitter.png" alt="Twitter" height="32px">
-          <img class="social" src="images/linkedin.png" alt="Linkedin" height="32px">
-          <img class="social" src="images/instagram.png" alt="Instagram" height="32px">
-        </div>
-      </div>
-
 </div>
 
 
 <div class="footer">
 
   <div class="footer-child">
-    <img src="images/green_Drinkin.png" alt="Dkin Logo" height="90px" class="nav-logo">
+    <img src="images/green_Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
   </div>
 
   <div class="footer-child">
@@ -210,7 +148,30 @@
       <a class="in-text-link" href="product_catalogue.html">Products</a>
       <a class="in-text-link" href="about.html">About</a>
     </div>
+    <div class="footer-sub-child">
+      <img class="social" src="images/facebook.png" alt="Facebook" height="32px">
+      <img class="social" src="images/twitter.png" alt="Twitter" height="32px">
+      <img class="social" src="images/linkedin.png" alt="Linkedin" height="32px">
+      <img class="social" src="images/instagram.png" alt="Instagram" height="32px">
+    </div>
+  </div>
 
-    
+</div>
+
+<!-- trying to make hamburger menu work -->
+<script type="text/javascript">
+  function myFunction(){
+    var x = document.getElementById("hidden-menu");
+    if(x.style.display === "none"){
+      x.style.display = "block";
+    }
+    else{
+      x.style.display = "none;"
+    }
+  }
+</script>
+
+
+
   </body>
 </html>
