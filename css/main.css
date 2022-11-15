@@ -124,14 +124,15 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   color: #21691B;
   background-color: #E7F7E6;
   text-decoration: none;
-  border-style: solid;
-  border-color: #21691B;
-  border-width: 2px;
+  border: 2px solid #21691B;
   font-weight: 600;
-  transition-property: background-color, border-radius;
+  transition-property: box-shadow;
   transition-duration: 0.5s;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+
+  /*border and radius*/
+  border-radius: 0.5rem;
 }
 
 .secondary-button {
@@ -140,26 +141,27 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   color: #21691B;
   background-color: #FFFFFF;
   text-decoration: none;
-  border-style: solid;
-  border-color: #21691B;
-  border-width: 2px;
+  border: 2px solid #21691B;
   font-weight: 600;
-  transition-property: background-color, border-radius;
+  transition-property: box-shadow;
   transition-duration: 0.5s;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .secondary-button:hover, .button-nav:focus {
-  background-color: #E7F7E6;
+  /*background-color: #E7F7E6;
   color: #000000;
-  border-radius: 1rem;
+  border-radius: 1rem;*/
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #E7F7E6;
+  /*background-color: #E7F7E6;
   color: #000000;
-  border-radius: 1rem;
+  border-radius: 1rem;*/
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
 }
 
 /* Styling for submit button*/
@@ -169,20 +171,21 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   color: #ffffff;
   background-color: #21691B;
   text-decoration: none;
-  border-style: solid;
-  border-color: #21691B;
-  border-width: 2px;
+  border: 2px solid #21691B;
   font-weight: 600;
-  transition-property: background-color, border-radius;
+  transition-property: box-shadow;
   transition-duration: 0.5s;
   margin-right: 0rem;
   margin-bottom: 0.5rem;
+
+  border-radius: 0.5rem;
 }
 
 .button-submit:hover, .button-submit:focus {
-  background-color: #21691B;
+  /*background-color: #21691B;
   color: #000000;
-  border-radius: 1rem;
+  border-radius: 1rem;*/
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
 }
 
 /* Styling for reset button*/
@@ -262,7 +265,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   margin-bottom: 0.25rem;
   margin-top: 1rem;
   font-weight:800;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .header3 {
@@ -305,7 +308,8 @@ p {
   display: flex;
   /* border: 3px solid #21691B; */
   padding: 1rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   width: fit-content;
   /* width: 75%; */
   background-color: #FFFFFF;
@@ -781,9 +785,8 @@ margin: 2rem;
 
 
 /* home page things */
-.page-title{
-  margin: 5rem;
-  margin-top: 7rem;
+.extra-bottom-margin {
+  margin-bottom: 3rem;
 }
 
 .home-products{
@@ -799,6 +802,9 @@ height: auto;
 
 .home-page{
   background-color: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-top: 7rem;
 }
 
 #explore{
@@ -811,8 +817,8 @@ height: auto;
 
 .background-block{
   display: flex;
-  margin: 5rem;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .background-child{
