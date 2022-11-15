@@ -212,6 +212,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
 .in-text-link {
   color: #21691B;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .in-text-link:hover, .in-text-link:focus {
@@ -252,8 +253,7 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   font-family: "DM Serif Display", sans-serif;
   margin-bottom: 0.75rem;
   margin-top: 1rem;
-  margin-left: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #21691B;
   width: 100%;
 }
@@ -438,8 +438,6 @@ margin: 2rem;
 }
 
 
-
-
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -471,7 +469,6 @@ margin: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .image{
@@ -748,13 +745,15 @@ margin: 2rem;
 }
 
 .checkout-flex-item {
-  flex: 1;
+  width: auto;
+  flex-grow: 1;
 }
 
 .checkout-right-buttons {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  height: auto;
 }
 
 .total-amount {
@@ -764,6 +763,12 @@ margin: 2rem;
   justify-content: space-between;
 
   margin-bottom: 160px;
+}
+
+.checkout-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /*Payments Page*/
