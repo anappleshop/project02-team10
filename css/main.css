@@ -535,6 +535,7 @@ margin: 2rem;
 }
 
 
+
 .about-description{
   max-width: 450px;
 }
@@ -925,7 +926,7 @@ height: auto;
 
 .about-child-text{
   margin: auto;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
 }
 
 .about-child-description{
