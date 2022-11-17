@@ -522,6 +522,8 @@ margin: 2rem;
 .new-content-spacing{
   margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .about-new-flex{
