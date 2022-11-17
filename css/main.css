@@ -217,6 +217,8 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   color: #21691B;
   font-weight: 700;
   text-decoration: underline;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .in-text-link:hover, .in-text-link:focus {
