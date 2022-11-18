@@ -528,6 +528,22 @@ margin: 2rem;
   padding-right: 10%;
 }
 
+.citations-page{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.list-space{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.break{
+  word-break: break-all;
+}
+
 .about-new-flex{
   display: flex;
   flex-direction: column;
