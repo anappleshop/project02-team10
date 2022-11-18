@@ -21,17 +21,15 @@
 
         <a href="index.html"><img src="images/Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
 
-
         <nav class="nav-right">
 
           <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
           <a class="button-nav" href="#text_elements">Text Elements</a>
           <a class="button-nav" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav" href="product_listing.html">Product Listing Template</a>
-          <a class="button-nav" href="checkout.html">Checkout Template</a>
-          <a class="button-nav" href="#citations">Citations</a>
+          <a class="button-nav" href="product_catalogue.html">Product Listing Template</a>
+          <a class="button-nav" href="checkout_page.html">Checkout Template</a>
+          <a class="button-nav" href="citations.html">Citations</a>
         </nav>
-        <!-- <img src="images/hamburger.png" alt="Hamburger" height="30px" id="hamburger"> -->
 
       </div>
 
@@ -53,7 +51,7 @@
 
           <br><br><br>
           <h3>Company Info</h3>
-          <p>DrinkIn is an e-commerce international drinks collection. The company surfaces a variety of drinks from around the world. These are specifically non-alchologic drinks.</p>
+          <p>DrinkIn is an e-commerce international drinks collection. The company surfaces a variety of drinks from around the world. These are specifically non-alcoholic drinks.</p>
           <br>
           <p>The ideal customer is 20-40 years old, adventurous, and enjoys trying new things. </p>
           <br>
@@ -77,18 +75,16 @@
           <img src="images/colours.png" alt="Colours" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;">
           <p>Green is the primary colour. Chosen to stand for the vibrance shown in many major international drink colours. to create a distinct brand identity that represents the refreshing feeling of delicious drinks. Green is used for main components, such as primary and secondary buttons, navigation, etc.</p>
           <br>
-          <p>Light Green is used as an accent colour. This colour is used to support the primary green – light green is used in hover states, and image treatment.</p>
+          <p>Light Green is used as an accent colour. This colour is used to support the primary green.</p>
           <br>
           <p>White is the website’s negative colour. Used to contrast with the primary green in accent and in negative connotations, such as reset.</p>
           <br>
-          <p>Grey is used to lower the hierarchy of text. Specifically, to show disabled interactions or labels.</p>
+          <p>Grey is used to lower the hierarchy of text in the footer. As well it is used when hovering over in-text links.</p>
           <br>
           <p>Black is the main text colour. Used for the body copy and most headers.</p>
           <br><br><br>
 
           <h3>Imagery and Art Direction</h3>
-          <!-- <img src="images/images.png" alt="Images" style="width: 100%; max-width: 1000px; margin-bottom: 2rem;"> -->
-
           <div class="image-sample">
           <img class="image" src="images/drink-1.png" alt="Image of Milkis drink">
           <img class="image" src="images/drink-2.png" alt="Image of Genki Forest drink">
@@ -106,7 +102,6 @@
       <!-- INTERACTIVE ELEMENTS SECTION // -->
       <section id="interactive_elements">
         <h2 class="style-guide-section-header">Interactive Elements</h2>
-
 
         <!-- Default Text Link styling section -->
         <!-- reference: https://www.w3schools.com/html/html_links.asp-->
@@ -171,16 +166,18 @@
           <h3>Text Input Field with Label</h3>
 
           <h4>CSS selector:</h4>
+          <p>.input-label</p>
           <p>.input-field</p>
+
 
           <h4>Sample code:</h4>
           <code>
-          &lt;label&gt;Enter today's date:&lt;/label&gt;<br />
-          &lt;input type=&quot;date&quot; class=&quot;input-field&quot;&gt;
+          &lt;label class=&quot;input-label&quot;&gt;Enter today's date:&lt;/label&gt;<br />
+          &lt;input class=&quot;input-field&quot; type=&quot;date&quot; name=&quot;today's date&quot;&gt;
           </code>
 
           <h4>Rendered element:</h4>
-          <label class="input-field-label">Enter today's date:</label> <br>
+          <label class="input-label">Enter today's date:</label> <br>
           <input class="input-field" type="date" name="today's date">
         </section>
 
@@ -340,25 +337,29 @@
           <h3>Main Navigation</h3>
 
           <h4>CSS selector:</h4>
-          <p>.main-nav</p>
+          <p>.top-nav</p>
 
           <h4>Sample code:</h4>
           <code>
-          &lt;ul class=&quot;main-nav&quot;&gt;<br />
-            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
-            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br />
-            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
-            &lt;li&gt;&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br />
-          &lt;/ul&gt;
+            &lt;div class="top-nav"&gt;
+                &lt;a href="index.html"&gt; &lt;img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo"&gt;&lt;/a&gt;<br>
+                &lt;nav class="nav-right"&gt;<br>
+                  &lt;a class="button-nav" href="product_catalogue.html"&gt;Products&lt;/a&gt;<br>
+                  &lt;a class="button-nav" href="about.html"&gt;About&lt;/a&gt;<br>
+                  &lt;a href="checkout_page.html"&gt; &lt;img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img" class="fade"&gt;&lt;/a&gt;<br>
+                &lt;/nav&gt;<br>
+            &lt;/div&gt;<br>
           </code>
 
           <h4>Rendered element:</h4>
-          <div class="main-nav">
-            <a class="button-nav" href="#">Home</a>
-            <a class="button-nav" href="#">Products</a>
-            <a class="button-nav" href="#">Contact</a>
-            <a class="button-nav" href="#">About</a>
-            <a><img src="images/cart_icon.png" alt="checkout cart" width="50px" id="checkout-img" class="fade"></a>
+
+          <div class="top-nav">
+              <a href="index.html"> <img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo"></a>
+              <nav class="nav-right">
+                <a class="button-nav" href="product_catalogue.html">Products</a>
+                <a class="button-nav" href="about.html">About</a>
+                <a href="checkout_page.html"> <img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img" class="fade"></a>
+              </nav>
           </div>
 
         </section>
@@ -378,12 +379,12 @@
 
             <div class="footer-child footer-child-lastline">
               <div class="footer-sub-child">
-                <a class="in-text-link" href="#">Home</a>
-                <a class="in-text-link" href="#">Products</a>
-                <a class="in-text-link" href="#">About</a>
-                <a class="in-text-link" href="#">Style Guide</a>
-                <a class="in-text-link" href="#">Citations</a>
-                <a class="in-text-link" href="#">Git</a>
+                <a class="in-text-link" href="index.html">Home</a>
+                <a class="in-text-link" href="product_catalogue.html">Products</a>
+                <a class="in-text-link" href="about.html">About</a>
+                <a class="in-text-link" href="style_guide.html">Style Guide</a>
+                <a class="in-text-link" href="citations.html">Citations</a>
+                <a class="in-text-link" href="https://github.com/anappleshop/project02-team10.git">Git</a>
               </div>
               <div class="footer-sub-child">
                 <img class="social" src="images/facebook.png" alt="Facebook" height="32px">
@@ -443,27 +444,98 @@
 
           <h4>Sample code:</h4>
           <code>
-          &lt;div&gt;<br />
-            &lt;h4 class=&quot;header4&quot;&gt;Payment&lt;/h4&gt;<br />
-            &lt;input type=&quot;radio&quot; class=&quot;radio-button&quot;&gt;<br />
-            &nbsp;&lt;label&gt;Visa&lt;/label&gt; <br />
-            &lt;br&gt;<br />
-            &lt;input type=&quot;radio&quot; class=&quot;radio-button&quot;&gt;<br />
-            &nbsp;&lt;label&gt;Mastercard&lt;/label&gt;<br />
-            &lt;br&gt;<br />
-            &lt;label&gt;Credit Card Number:&lt;/label&gt;<br />
-            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
-            &lt;label&gt;Expiration Date:&lt;/label&gt;<br />
-            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
-            &lt;label&gt;CVV:&lt;/label&gt;<br />
-            &lt;input type=&quot;text&quot; class=&quot;input-field&quot;&gt; &lt;br&gt;<br />
-            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Submit&lt;/a&gt;<br />
-          &lt;/div&gt;
+            &lt;div class="payment-flex"&gt;<br>
+                &lt;div class="shipping-info"&gt;<br>
+                    &lt;h2 class="header2 extra-bottom-margin"&gt;Shipping Info&lt;/h2&gt;<br>
+                    &lt;label class="input-label" for="sname"&gt;Name&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="sname" name="sname" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="semail"&gt;Email&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="semail" name="semail" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="sadsress"&gt;Address&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="sadsress" name="sadsress" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="sadsress2"&gt;Address 2&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="sadsress2" name="sadsress2" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="scity"&gt;City&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="scity" name="scity" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="sprovince"&gt;Province&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="sprovince" name="sprovince" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="scountry"&gt;Country&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="scountry" name="scountry" type="text"&gt;&lt;br&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="billing-info"&gt;<br>
+                    &lt;h2 class="header2 extra-bottom-margin"&gt;Billing Info&lt;/h2&gt;<br>
+
+                    &lt;h3 class="header3">Billing address&lt;/h3&gt;<br>
+                    &lt;input type="checkbox" checked="checked"&gt;&lt;span class="checkmark">&lt;/span&gt;<br>
+                    &lt;label class="input-field-label extra-bottom-margin"&gt;Same as shipping address&lt;/label&gt;<br>
+
+                    &lt;h3 class="header3">Credit card details&lt;/h3&gt;<br>
+                    &lt;label class="input-label" for="scity"&gt;City&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="scity" name="scity" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="sprovince"&gt;Province&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="sprovince" name="sprovince" type="text"&gt;&lt;br&gt;<br>
+                    &lt;label class="input-label" for="scountry"&gt;Country&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input class="input-field" id="scountry" name="scountry" type="text"&gt;&lt;br&gt;<br>
+                &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="total-amount"&gt;<br>
+                &lt;h2 class="header2"&gt;Total: $7.30&lt;/h2&gt;<br>
+                &lt;div class="checkout-right-buttons"&gt;<br>
+                  &lt;a class="secondary-button" href="checkout_page.html"&gt;Back&lt;/a&gt;<br>
+                  &lt;a class="button-submit" href="confirmation.html"&gt;Confirm Order&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;
           </code>
 
           <h4>Rendered element:</h4>
           <div class="payment-form">
-            <h3 class="header3">Billing Info</h3>
+            <!-- <h1 class="header1">Payment</h1> -->
+
+            <div class="payment-flex">
+                <div class="shipping-info">
+                    <h2 class="header2 extra-bottom-margin">Shipping Info</h2>
+                    <label class="input-label" for="sname">Name</label><br>
+                    <input class="input-field" id="sname" name="sname" type="text"><br>
+                    <label class="input-label" for="semail">Email</label><br>
+                    <input class="input-field" id="semail" name="semail" type="text"><br>
+                    <label class="input-label" for="sadsress">Address</label><br>
+                    <input class="input-field" id="sadsress" name="sadsress" type="text"><br>
+                    <label class="input-label" for="sadsress2">Address 2</label><br>
+                    <input class="input-field" id="sadsress2" name="sadsress2" type="text"><br>
+                    <label class="input-label" for="scity">City</label><br>
+                    <input class="input-field" id="scity" name="scity" type="text"><br>
+                    <label class="input-label" for="sprovince">Province</label><br>
+                    <input class="input-field" id="sprovince" name="sprovince" type="text"><br>
+                    <label class="input-label" for="scountry">Country</label><br>
+                    <input class="input-field" id="scountry" name="scountry" type="text"><br>
+                </div>
+                <div class="billing-info">
+                    <h2 class="header2 extra-bottom-margin">Billing Info</h2>
+
+                    <h3 class="header3">Billing address</h3>
+                    <input type="checkbox" checked="checked"><span class="checkmark"></span>
+                    <label class="input-field-label extra-bottom-margin">Same as shipping address</label>
+
+                    <h3 class="header3">Credit card details</h3>
+                    <label class="input-label" for="scity">City</label><br>
+                    <input class="input-field" id="scity" name="scity" type="text"><br>
+                    <label class="input-label" for="sprovince">Province</label><br>
+                    <input class="input-field" id="sprovince" name="sprovince" type="text"><br>
+                    <label class="input-label" for="scountry">Country</label><br>
+                    <input class="input-field" id="scountry" name="scountry" type="text"><br>
+                </div>
+            </div>
+
+            <div class="total-amount">
+                <h2 class="header2">Total: $7.30</h2>
+                <div class="checkout-right-buttons">
+                  <a class="secondary-button" href="checkout_page.html">Back</a>
+                  <a class="button-submit" href="confirmation.html">Confirm Order</a>
+                </div>
+              </div>
+
+            <!-- <h3 class="header3">Billing Info</h3>
 
             <label class="input-label">Name</label> <br>
             <input type="text" class="input-field"> <br>
@@ -478,10 +550,10 @@
             <input type="text" class="input-field"> <br>
 
             <label class="input-label">Country</label> <br>
-            <input type="text" class="input-field"> <br>
+            <input type="text" class="input-field"> <br> -->
 
             <br>
-
+<!--
             <h3 class="header3">Payment Info</h3>
             <br>
 
@@ -507,7 +579,7 @@
             <br> <br>
 
             <a class="secondary-button" href="#">Back</a>
-            <a class="button-submit" href="#">Submit</a>
+            <a class="button-submit" href="#">Submit</a> -->
           </div>
 
         </section>
@@ -578,31 +650,6 @@
 
       </section>
       <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-      <section id="citations">
-        <h2 class="style-guide-section-header">Citations</h2>
-
-        <ul>
-          <li>Andersson, Rasmus. Designer. 2016. <strong>Inter [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Inter">https://fonts.google.com/specimen/Inter</a></li>
-          <li>FrieBhammer, Frank. Designer. 2013. <strong>DM Serif Display [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/DM+Serif+Display">https://fonts.google.com/specimen/DM+Serif+Display</a></li>
-          <li><strong>Want Want Photo [Media]</strong>. Retrieved from <a href="https://cdn11.bigcommerce.com/s-xa6bqyztvi/images/stencil/608x608/products/3825/919/686352809081__69841.1631732753.386.513__06268.1657124666.jpg?c=1">https://cdn11.bigcommerce.com/s-xa6bqyztvi/images/stencil/608x608/products/3825/919/686352809081__69841.1631732753.386.513__06268.1657124666.jpg?c=1</a>.</li>
-          <li><strong>Milo Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0308/2069/6123/products/Milo_200_large_2x.jpg?v=1582625524">https://cdn.shopify.com/s/files/1/0308/2069/6123/products/Milo_200_large_2x.jpg?v=1582625524</a>.</li>
-          <li><strong>Guarana Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0285/7222/1545/products/GuaranaCan.jpg?v=1607632553">https://cdn.shopify.com/s/files/1/0285/7222/1545/products/GuaranaCan.jpg?v=1607632553</a>.</li>
-          <li><strong>Milkis Photo [Media]</strong>. Retrieved from <a href="https://cdn.shopify.com/s/files/1/0338/0694/2253/products/LotteMilkisDrinkCanOriginalFlavor8.45oz_front_2048x.jpg?v=1650574585">https://cdn.shopify.com/s/files/1/0338/0694/2253/products/LotteMilkisDrinkCanOriginalFlavor8.45oz_front_2048x.jpg?v=1650574585</a>.</li>
-          <li>https://www.architecturaldigest.com/gallery/best-canned-non-alcoholic-drinks</li>
-          <li>https://www.tastemade.com/videos/asian-soda-taste-test/</li>
-          <li>https://unsplash.com/photos/rZyGfLC4vy4</li>
-          <li>https://unsplash.com/photos/5YSHY5jBojY</li>
-          <li>https://haisue.ca/product/lotte-milkis-original-250ml/</li>
-          <li>https://unimarket.ca/products/guarana-antarctica-flavoured-soft-drink-can</li>
-          <li>https://www.yuehwa.com.sg/en-us/want-want-milk-060404434</li>
-          <li>https://thenounproject.com/icon/cart-1162040/</li>
-          <li>https://theyummybrand.com/product/lotte-milkis-milk-flavor-carbonated-soda/</li>
-          <li>https://gimmefood.se/products/milkis-soda-can</li>
-          <li>https://unsplash.com/photos/CIWaakoIYWU</li>
-        </ul>
 
       </section>
     </div>
