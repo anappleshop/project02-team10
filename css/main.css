@@ -450,12 +450,7 @@ margin: 2rem;
   opacity: 0.5;
 }
 
-.about-content-container{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+
 
 .citations-page{
   margin-top: 4rem;
@@ -473,21 +468,7 @@ margin: 2rem;
   word-break: break-all;
 }
 
-.about-new-flex{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.about-title-space{
-  margin-bottom: 4rem;
-}
-
-
-
-.about-description{
-  max-width: 450px;
-}
 
 .text-max-500{
   max-width: 500px;
@@ -504,6 +485,8 @@ margin: 2rem;
 .grey{
   color: #454A45;
 }
+
+/* Products Catalogue */
 
 .products-container {
   margin-top: 7rem;
@@ -546,13 +529,14 @@ margin: 2rem;
   padding: 4rem;
   justify-content: flex-start;
   margin-top: 4rem;
-
 }
 
 .block{
   display: flex;
   justify-content: center;
 }
+
+/* Home Page */
 
 #home-text{
   position: absolute;
@@ -574,11 +558,97 @@ margin: 2rem;
   margin-right: auto;
 }
 
-
 #landing-image{
   position: relative;
   height: 90vh;
   padding: 0px;
+}
+
+.extra-bottom-margin {
+  margin-bottom: 3rem;
+}
+
+.home-products{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.home-image{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.home-page{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 7rem;
+}
+
+.home-background-gradient {
+  width: 100%;
+  background-image: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
+}
+
+#explore{
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.background-block{
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.background-child{
+  margin-left: 4rem;
+  margin-top: 3rem;
+  width: 90vw;
+}
+
+#learn-button{
+  margin-top: 2rem;
+}
+
+.products-block{
+  margin-bottom: 5rem;
+  /* background-color: rgba(250, 255, 250, 0) 100%); */
+}
+
+/* About Page */
+
+.about-content-container{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about-child-item{
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-center {
+  text-align: center;
+}
+
+.about-new-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title-space{
+  margin-bottom: 4rem;
+}
+
+.about-description{
+  max-width: 450px;
 }
 
 #message{
@@ -586,7 +656,7 @@ margin: 2rem;
 }
 
 #submit{
-  margin:2rem auto;
+  margin: 2rem auto;
 }
 
 .contact-us{
@@ -625,9 +695,84 @@ margin: 2rem;
   flex-direction: row;
 }
 
+.about-child-2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-child-1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-child-text{
+  margin: auto;
+  /* margin-left: 7rem; */
+}
+
+.about-child-description{
+  margin-left: 7rem;
+}
+
+.bottom-margin{
+  margin-bottom: 5rem;
+}
+
+.button-size{
+  width: 200px;
+  margin: auto;
+}
+
+#drinks-box{
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+#people{
+  width: 50vw;
+  height: auto;
+}
+
+.fave-drink-listing{
+  width: auto;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-products-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.min-width-event{
+  min-width: 8rem;
+  flex: 1;
+}
+
+.events-img-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-stack{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
-/*product-info*/
+/* Product Deatils Page */
 
 .product-details-container {
   padding-left: 10%;
@@ -691,7 +836,7 @@ margin: 2rem;
   min-width: 15rem;
 }
 
-/*Product Reviews*/
+/*product reviews*/
 
 .ratings-group {
   display: flex;
@@ -737,7 +882,7 @@ margin: 2rem;
   width: auto;
 }
 
-/*Checkout*/
+/* Checkout Page */
 
 .checkout-container {
   padding-left: 10%;
@@ -810,7 +955,7 @@ margin: 2rem;
   width: 100%;
 }
 
-/* Confirmation */
+/* Confirmation and Submission Page */
 
 .confirmation-container {
   padding-top: 25vh;
@@ -827,123 +972,11 @@ margin: 2rem;
   text-align: center;
 }
 
-/* home page things */
-.extra-bottom-margin {
-  margin-bottom: 3rem;
-}
 
-.home-products{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
 
-.home-image{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
-}
 
-.home-page{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 7rem;
-}
 
-.home-background-gradient {
-  width: 100%;
-  background-image: linear-gradient(180deg, #F2FFF2 0%, rgba(250, 255, 250, 0) 100%);
-}
 
-#explore{
-  margin-top: 2rem;
-  margin-bottom: 10rem;
-}
-
-.background-text{
-}
-
-.background-block{
-  display: flex;
-  margin-top: 5rem;
-  margin-bottom: 7rem;
-}
-
-.background-child{
-  margin-left: 4rem;
-  margin-top: 3rem;
-  width: 90vw;
-}
-
-#learn-button{
-  margin-top: 2rem;
-}
-
-.products-block{
-  margin-bottom: 5rem;
-  /* background-color: rgba(250, 255, 250, 0) 100%); */
-}
-
-.about-child-2{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.about-child-1{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.about-child-text{
-  margin: auto;
-  /* margin-left: 7rem; */
-}
-
-.about-child-description{
-  margin-left: 7rem;
-}
-
-.bottom-margin{
-  margin-bottom: 5rem;
-}
-
-.button-size{
-  width: 200px;
-  margin: auto;
-}
-
-#drinks-box{
-  width: 50vw;
-  height: auto;
-}
-
-#people{
-  width: 49vw;
-  height: auto;
-}
-
-.fave-drink-listing{
-  width: auto;
-}
-
-.flex-box{
-  display: flex;
-  flex-direction: row;
-}
-
-.about-products-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
-.min-width-event{
-  min-width: 8rem;
-}
 /* MEDIA QUERIES SECTION */
 /* XSmall screen (mobile): <400px */
 /* Small screen (mobile): <820px */
@@ -1228,24 +1261,37 @@ margin: 2rem;
   }
 
   /* about page */
+
   #drinks-box{
-    margin-top: 3rem;
+    margin: 0px;
+    width: 100vw;
   }
+
   #people{
     margin-top: 3rem;
+    width: 100vw;
   }
+
   .about-child-1{
     flex-wrap: wrap;
   }
   .about-child-2{
     flex-wrap: wrap-reverse;
   }
+
   .about-child-item{
     margin: auto;
+    padding: 0px;
   }
+
+  .p-center {
+    text-align: center;
+  }
+
   .about-products-flex{
     justify-content: center;
   }
+
   .event-stack{
     flex-wrap: wrap;
   }
