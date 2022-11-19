@@ -330,29 +330,39 @@
 
           <h4>CSS selector:</h4>
           <p>.top-nav</p>
+          <p>.stack-nav</p>
 
           <h4>Sample code:</h4>
           <code>
-            &lt;div class="top-nav"&gt;
-                &lt;a href="index.html"&gt; &lt;img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo"&gt;&lt;/a&gt;<br>
-                &lt;nav class="nav-right"&gt;<br>
-                  &lt;a class="button-nav" href="product_catalogue.html"&gt;Products&lt;/a&gt;<br>
-                  &lt;a class="button-nav" href="about.html"&gt;About&lt;/a&gt;<br>
-                  &lt;a href="checkout_page.html"&gt; &lt;img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img" class="fade"&gt;&lt;/a&gt;<br>
-                &lt;/nav&gt;<br>
-            &lt;/div&gt;<br>
+            &lt;div class=&quot;top-nav stack-nav&quot;&gt;<br />
+    &lt;div class=&quot;&quot;&gt;<br />
+      &lt;a href=&quot;index.html&quot;&gt; &lt;img src=&quot;images/Drinkin.png&quot; alt=&quot;Drinkin Logo&quot; height=&quot;70&quot; class=&quot;nav-logo&quot;&gt;&lt;/a&gt;<br />
+    &lt;/div&gt;<br />
+<br />
+      &lt;nav class=&quot;nav-right&quot;&gt;<br />
+          &lt;a class=&quot;button-nav&quot; href=&quot;product_catalogue.html&quot;&gt;Products&lt;/a&gt;<br />
+          &lt;a class=&quot;button-nav&quot; href=&quot;about.html&quot;&gt;About&lt;/a&gt;<br />
+          &lt;a class=&quot;button-nav&quot; href=&quot;about.html#contact&quot;&gt;Contact&lt;/a&gt;<br />
+          &lt;!-- used this link to help me navigate to a section on a separate page https://stackoverflow.com/questions/5172717/how-to-navigate-to-a-section-of-a-page --&gt;<br />
+          &lt;a href=&quot;checkout_page.html&quot;&gt; &lt;img src=&quot;images/cart_icon.png&quot; alt=&quot;Checkout Cart&quot; height=&quot;40&quot; id=&quot;checkout-img&quot; class=&quot;fade&quot;&gt;&lt;/a&gt;<br />
+      &lt;/nav&gt;<br />
+      &lt;/div&gt;
           </code>
 
           <h4>Rendered element:</h4>
 
-          <div class="top-nav">
-              <a href="index.html"> <img src="images/Drinkin.png" alt="Drinkin Logo" height="70px" class="nav-logo"></a>
+          <div class="top-nav stack-nav">
+            <div class="">
+              <a href="index.html"> <img src="images/Drinkin.png" alt="Drinkin Logo" height="70" class="nav-logo"></a>
+            </div>
               <nav class="nav-right">
-                <a class="button-nav" href="product_catalogue.html">Products</a>
-                <a class="button-nav" href="about.html">About</a>
-                <a href="checkout_page.html"> <img src="images/cart_icon.png" alt="Checkout Cart" height="40px" id="checkout-img" class="fade"></a>
+                  <a class="button-nav" href="product_catalogue.html">Products</a>
+                  <a class="button-nav" href="about.html">About</a>
+                  <a class="button-nav" href="about.html#contact">Contact</a>
+                  <!-- used this link to help me navigate to a section on a separate page https://stackoverflow.com/questions/5172717/how-to-navigate-to-a-section-of-a-page -->
+                  <a href="checkout_page.html"> <img src="images/cart_icon.png" alt="Checkout Cart" height="40" id="checkout-img" class="fade"></a>
               </nav>
-          </div>
+              </div>
 
         </section>
 
@@ -368,7 +378,7 @@
             &lt;div class=&quot;footer&quot;&gt;<br />
             <br />
               &lt;div class=&quot;footer-child&quot;&gt;<br />
-                &lt;img src=&quot;images/green_Drinkin.png&quot; alt=&quot;Drinkin Logo&quot; height=&quot;90px&quot; class=&quot;nav-logo&quot;&gt;<br />
+                &lt;img src=&quot;images/green_Drinkin.png&quot; alt=&quot;Drinkin Logo&quot; height=&quot;90&quot; class=&quot;nav-logo&quot;&gt;<br />
               &lt;/div&gt;<br />
             <br />
               &lt;div class=&quot;footer-child&quot;&gt;<br />
@@ -380,14 +390,15 @@
                   &lt;a class=&quot;in-text-link&quot; href=&quot;index.html&quot;&gt;Home&lt;/a&gt;<br />
                   &lt;a class=&quot;in-text-link&quot; href=&quot;product_catalogue.html&quot;&gt;Products&lt;/a&gt;<br />
                   &lt;a class=&quot;in-text-link&quot; href=&quot;about.html&quot;&gt;About&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;about.html#contact&quot;&gt;Contact&lt;/a&gt;<br />
                   &lt;a class=&quot;in-text-link&quot; href=&quot;style_guide.html&quot;&gt;Style Guide&lt;/a&gt;<br />
                   &lt;a class=&quot;in-text-link&quot; href=&quot;citations.html&quot;&gt;Citations&lt;/a&gt;<br />
                   &lt;a class=&quot;in-text-link&quot; href=&quot;https://github.com/anappleshop/project02-team10.git&quot;&gt;Git Hub&lt;/a&gt;<br />
                 &lt;/div&gt;<br />
                 &lt;div class=&quot;footer-sub-child&quot;&gt;<br />
-                  &lt;a href=&quot;https://www.facebook.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/facebook.png&quot; alt=&quot;Facebook&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
-                  &lt;a href=&quot;https://twitter.com/?lang=en&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/twitter.png&quot; alt=&quot;Twitter&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
-                  &lt;a href=&quot;https://www.instagram.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/instagram.png&quot; alt=&quot;Instagram&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
+                  &lt;a href=&quot;https://www.facebook.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/facebook.png&quot; alt=&quot;Facebook&quot; height=&quot;32&quot;&gt;&lt;/a&gt;<br />
+                  &lt;a href=&quot;https://twitter.com/?lang=en&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/twitter.png&quot; alt=&quot;Twitter&quot; height=&quot;32&quot;&gt;&lt;/a&gt;<br />
+                  &lt;a href=&quot;https://www.instagram.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/instagram.png&quot; alt=&quot;Instagram&quot; height=&quot;32&quot;&gt;&lt;/a&gt;<br />
                 &lt;/div&gt;<br />
               &lt;/div&gt;<br />
             <br />
@@ -399,7 +410,7 @@
           <div class="footer">
 
             <div class="footer-child">
-              <img src="images/green_Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
+              <img src="images/green_Drinkin.png" alt="Drinkin Logo" height="90" class="nav-logo">
             </div>
 
             <div class="footer-child">
@@ -411,14 +422,15 @@
                 <a class="in-text-link" href="index.html">Home</a>
                 <a class="in-text-link" href="product_catalogue.html">Products</a>
                 <a class="in-text-link" href="about.html">About</a>
+                <a class="in-text-link" href="about.html#contact">Contact</a>
                 <a class="in-text-link" href="style_guide.html">Style Guide</a>
                 <a class="in-text-link" href="citations.html">Citations</a>
                 <a class="in-text-link" href="https://github.com/anappleshop/project02-team10.git">Git Hub</a>
               </div>
               <div class="footer-sub-child">
-                <a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="Facebook" height="32px"></a>
-                <a href="https://twitter.com/?lang=en"><img class="social" src="images/twitter.png" alt="Twitter" height="32px"></a>
-                <a href="https://www.instagram.com/"><img class="social" src="images/instagram.png" alt="Instagram" height="32px"></a>
+                <a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="Facebook" height="32"></a>
+                <a href="https://twitter.com/?lang=en"><img class="social" src="images/twitter.png" alt="Twitter" height="32"></a>
+                <a href="https://www.instagram.com/"><img class="social" src="images/instagram.png" alt="Instagram" height="32"></a>
               </div>
             </div>
 
@@ -595,38 +607,43 @@
 
           <h4>Sample code:</h4>
           <code>
-            &lt;div class="checkout-container"&gt;<br>
-
-              &lt;h1 class="header1"&gt;Checkout Cart (2)&lt;/h1&gt;<br>
-
-              &lt;div class="checkout-flex"&gt;<br>
-                &lt;div class="checkout-flex-item"&gt;<br>
-                  &lt;img src="images/drink-1.png" alt="Milkis Drink" class="checkout-photo"&gt;<br>
-                  &lt;h2 class="header2"&gt;Milkis&lt;/h2&gt;<br>
-                  &lt;h3 class="header3"&gt;— $2.25 —&lt;/h3&gt;<br>
-                  &lt;h4 class="header4 extra-bottom-margin"&gt;Quantity: 2&lt;/h4&gt;<br>
-                  &lt;p class="in-text-link"&gt;Remove from cart&lt;/p&gt;<br>
-                &lt;/div&gt;<br>
-                &lt;div class="checkout-flex-item"&gt;<br>
-                  &lt;img src="images/drink-3.png" alt="WantWant Drink" class="checkout-photo"&gt;<br>
-                  &lt;h2 class="header2"&gt;WantWant&lt;/h2&gt;<br>
-                  &lt;h3 class="header3"&gt;— $2.80 —&lt;/h3&gt;<br>
-                  &lt;h4 class="header4 extra-bottom-margin"&gt;Quantity: 1&lt;/h4&gt;<br>
-                  &lt;p class="in-text-link"&gt;Remove from cart&lt;/p&gt;<br>
-                &lt;/div&gt;<br>
-                &lt;div class="checkout-flex-item"&gt;<br>
-                &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-
-              &lt;div class="total-amount"&gt;<br>
-                &lt;h2 class="header2"&gt;Total: $7.30&lt;/h2&gt;<br>
-                &lt;div class="checkout-right-buttons"&gt;<br>
-                  &lt;a class="secondary-button" href="product_details.html"&gt;Back&lt;/a&gt;<br>
-                  &lt;a class="button-submit" href="payment.html"&gt;Checkout&lt;/a&gt;<br>
-                &lt;/div&gt;<br>
-              &lt;/div&gt;<br>
-
-            &lt;/div&gt;<br>
+            &lt;div class=&quot;checkout-container&quot;&gt;<br />
+<br />
+    &lt;h1 class=&quot;header1&quot;&gt;Checkout Cart (2)&lt;/h1&gt;<br />
+<br />
+    &lt;div class=&quot;checkout-flex&quot;&gt;<br />
+      &lt;div class=&quot;checkout-flex-item&quot;&gt;<br />
+        &lt;img src=&quot;images/drink-1.png&quot; alt=&quot;Milkis Drink&quot; class=&quot;checkout-photo&quot;&gt;<br />
+        &lt;h2 class=&quot;header2&quot;&gt;Milkis&lt;/h2&gt;<br />
+        &lt;h3 class=&quot;header3&quot;&gt;&mdash; $2.25 &mdash;&lt;/h3&gt;<br />
+        &lt;h4 class=&quot;header4 extra-bottom-margin&quot;&gt;Quantity: 2&lt;/h4&gt;<br />
+        &lt;p class=&quot;in-text-link&quot;&gt;Remove from cart&lt;/p&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class=&quot;checkout-flex-item&quot;&gt;<br />
+        &lt;img src=&quot;images/drink-3.png&quot; alt=&quot;WantWant Drink&quot; class=&quot;checkout-photo&quot;&gt;<br />
+        &lt;h2 class=&quot;header2&quot;&gt;WantWant&lt;/h2&gt;<br />
+        &lt;h3 class=&quot;header3&quot;&gt;&mdash; $2.80 &mdash;&lt;/h3&gt;<br />
+        &lt;h4 class=&quot;header4 extra-bottom-margin&quot;&gt;Quantity: 1&lt;/h4&gt;<br />
+        &lt;p class=&quot;in-text-link&quot;&gt;Remove from cart&lt;/p&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class=&quot;checkout-flex-item&quot;&gt;<br />
+        &lt;img src=&quot;images/drink-2.png&quot; alt=&quot;Genki Drink&quot; class=&quot;checkout-photo&quot;&gt;<br />
+        &lt;h2 class=&quot;header2&quot;&gt;Genki Forest&lt;/h2&gt;<br />
+        &lt;h3 class=&quot;header3&quot;&gt;&mdash; $4.25 &mdash;&lt;/h3&gt;<br />
+        &lt;h4 class=&quot;header4 extra-bottom-margin&quot;&gt;Quantity: 1&lt;/h4&gt;<br />
+        &lt;p class=&quot;in-text-link&quot;&gt;Remove from cart&lt;/p&gt;<br />
+      &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+<br />
+    &lt;div class=&quot;total-amount&quot;&gt;<br />
+      &lt;h2 class=&quot;header2&quot;&gt;Total: $11.55&lt;/h2&gt;<br />
+      &lt;div class=&quot;checkout-right-buttons&quot;&gt;<br />
+        &lt;a class=&quot;secondary-button&quot; href=&quot;product_details.html&quot;&gt;Back&lt;/a&gt;<br />
+        &lt;a class=&quot;button-submit&quot; href=&quot;payment.html&quot;&gt;Checkout&lt;/a&gt;<br />
+      &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+<br />
+  &lt;/div&gt;
           </code>
 
           <h4>Rendered element:</h4>
@@ -651,11 +668,16 @@
                 <p class="in-text-link">Remove from cart</p>
               </div>
               <div class="checkout-flex-item">
+                <img src="images/drink-2.png" alt="Genki Drink" class="checkout-photo">
+                <h2 class="header2">Genki Forest</h2>
+                <h3 class="header3">— $4.25 —</h3>
+                <h4 class="header4 extra-bottom-margin">Quantity: 1</h4>
+                <p class="in-text-link">Remove from cart</p>
               </div>
             </div>
 
             <div class="total-amount">
-              <h2 class="header2">Total: $7.30</h2>
+              <h2 class="header2">Total: $11.55</h2>
               <div class="checkout-right-buttons">
                 <a class="secondary-button" href="product_details.html">Back</a>
                 <a class="button-submit" href="payment.html">Checkout</a>
