@@ -242,13 +242,6 @@ source: https://www.w3schools.com/cssref/pr_font_weight.asp */
   transition-duration: 1s;
 }
 
-.main-nav {
-  vertical-align: middle;
-  background-color: #21691B;
-  display: flex;
-  padding: 1rem;
-  align-content: right;
-}
 
 /*
   TEXT ELEMENTS -------------------
@@ -646,7 +639,6 @@ margin: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: auto;
   gap: 2rem;
   margin-bottom: 80px;
   width: 100%;
@@ -1232,7 +1224,7 @@ margin: 2rem;
 
   .product-text {
     width:100%;
-    min-width: none;
+    min-width: unset;
   }
 
   /* about page */
