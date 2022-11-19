@@ -951,6 +951,10 @@ margin: 2rem;
   gap: 2rem;
   justify-content: space-between;
 }
+
+.min-width-event{
+  min-width: 8rem;
+}
 /* MEDIA QUERIES SECTION */
 /* XSmall screen (mobile): <400px */
 /* Small screen (mobile): <820px */
@@ -1086,6 +1090,8 @@ margin: 2rem;
     padding-left: 5%;
     padding-right: 5%;
   }
+
+
 
 }
 
@@ -1244,9 +1250,17 @@ margin: 2rem;
   .about-products-flex{
     justify-content: center;
   }
-  .about-new-flex{
-
+  .event-stack{
+    flex-wrap: wrap;
   }
+
+  .resize-img{
+    width: 35%;
+    height: auto;
+  }
+  /* .text-spacing{
+    margin: 1rem;
+  } */
 
 
 }
