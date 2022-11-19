@@ -17,19 +17,24 @@
 
     <header>
 
-      <div class="top-nav">
+      <div class="top-nav stack">
 
-        <a href="index.html"><img src="images/Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
+        <div class="">
+          <a href="index.html"><img src="images/Drinkin.png" alt="Drinkin Logo" height="90px" class="nav-logo">
 
-        <nav class="nav-right">
+        </div>
 
-          <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
-          <a class="button-nav" href="#text_elements">Text Elements</a>
-          <a class="button-nav" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav" href="product_catalogue.html">Product Listing Template</a>
-          <a class="button-nav" href="checkout_page.html">Checkout Template</a>
-          <a class="button-nav" href="citations.html">Citations</a>
-        </nav>
+        <!-- <nav class="nav-right"> -->
+
+  <a class="button-nav stack-space" href="#interactive_elements">Interactive Elements</a>
+
+
+  <a class="button-nav stack-space" href="#text_elements">Text Elements</a>
+
+
+          <a class="button-nav stack-space" href="#combined_elements">Combined Elements</a>
+          <a class="button-nav stack-space" href="citations.html">Citations</a>
+        <!-- </nav> -->
 
       </div>
 
@@ -361,6 +366,43 @@
         <section class="element">
           <h3>Footer</h3>
 
+          <h4>CSS selector:</h4>
+          <p>.footer</p>
+
+          <h4>Sample code:</h4>
+
+          <code>
+            &lt;div class=&quot;footer&quot;&gt;<br />
+            <br />
+              &lt;div class=&quot;footer-child&quot;&gt;<br />
+                &lt;img src=&quot;images/green_Drinkin.png&quot; alt=&quot;Drinkin Logo&quot; height=&quot;90px&quot; class=&quot;nav-logo&quot;&gt;<br />
+              &lt;/div&gt;<br />
+            <br />
+              &lt;div class=&quot;footer-child&quot;&gt;<br />
+                &lt;h4 class=&quot;grey&quot;&gt;Tel: 778-591-3940  |  email: info@drinkin.com&lt;/h4&gt;<br />
+              &lt;/div&gt;<br />
+            <br />
+              &lt;div class=&quot;footer-child footer-child-lastline&quot;&gt;<br />
+                &lt;div class=&quot;footer-sub-child&quot;&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;index.html&quot;&gt;Home&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;product_catalogue.html&quot;&gt;Products&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;about.html&quot;&gt;About&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;style_guide.html&quot;&gt;Style Guide&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;citations.html&quot;&gt;Citations&lt;/a&gt;<br />
+                  &lt;a class=&quot;in-text-link&quot; href=&quot;https://github.com/anappleshop/project02-team10.git&quot;&gt;Git Hub&lt;/a&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;footer-sub-child&quot;&gt;<br />
+                  &lt;a href=&quot;https://www.facebook.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/facebook.png&quot; alt=&quot;Facebook&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
+                  &lt;a href=&quot;https://twitter.com/?lang=en&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/twitter.png&quot; alt=&quot;Twitter&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
+                  &lt;a href=&quot;https://www.instagram.com/&quot;&gt;&lt;img class=&quot;social&quot; src=&quot;images/instagram.png&quot; alt=&quot;Instagram&quot; height=&quot;32px&quot;&gt;&lt;/a&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+            <br />
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+
           <div class="footer">
 
             <div class="footer-child">
@@ -397,32 +439,47 @@
 
           <h4>CSS selector:</h4>
           <p>.product-listing</p>
+          <p>.fave-drink-listing</p>
 
           <h4>Sample code:</h4>
           <code>
-          &lt;img src=&quot;product.jpg&quot; class=&quot;product-image&quot; alt=&quot;Hallway&quot; style=&quot;width:200px;height:auto;&quot;&gt;&lt;br&gt;<br />
-            &lt;h3 class=&quot;header3&quot;&gt;Milkis Drink &ndash; from Korea&lt;/h3&gt;&lt;br&gt;<br />
-            &lt;h4 class=&quot;header4&quot;&gt;$2.50&lt;/h4&gt;&lt;br&gt;<br />
-            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Detailed Description&lt;/a&gt;<br />
-            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Add to Cart&lt;/a&gt;
-          &lt;/div&gt;
+            &lt;div class="product-listing fave-drink-listing"&gt;<br>
+              &lt;div class="product-listing-child"&gt;<br>
+                &lt;img src="images/drink-1.png" class="product-image fave-img" alt="milkis drink"&gt;&lt;br&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="flex-box"&gt;<br>
+                &lt;div class="product-listing-child fave-drink-cap"&gt;<br>
+                  &lt;h3 class="header3">Milkis&lt;/h3&gt;<br>
+                  &lt;label class="input-label"&gt;Drink from South Korea&lt;/label&gt; &lt;br&gt;<br>
+                  &lt;br&gt;<br>
+                  &lt;h4 class="header4"&gt;— $2.25 —&lt;/h4>&lt;br&gt;<br>
+                  &lt;p class="product-description">Drink from Lotte. Goes well with alcohol like Soju. One of the most popular soft drinks from South Korea for the summer season!&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="product-listing-child"&gt;<br>
+                  &lt;a class="button-nav product-listing-child-submit fave-drink-button add-fave-button" href="checkout_page.html"&gt;Add to cart&lt;/a&gt; &lt;br&gt;<br>
+                  &lt;a class="secondary-button product-listing-child-nav fave-drink-button" href="product_details.html"&gt;View detailed description&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
           </code>
 
           <h4>Rendered element:</h4>
-          <div class="product-listing">
+          <div class="product-listing fave-drink-listing">
             <div class="product-listing-child">
-            <img src="images/drink-1.png" class="product-image" alt="milkis drink"><br>
+              <img src="images/drink-1.png" class="product-image fave-img" alt="milkis drink"><br>
             </div>
-            <div class="product-listing-child">
-            <h3 class="header3">Milkis</h3>
-            <label class="input-label">Drink from South Korea</label> <br>
-            <br>
-            <h4 class="header4">-$2.50-</h4><br>
-            <p class="product-description">Paragraph. This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="product-listing-child">
-            <a class="button-submit product-listing-child-submit" href="#">Add to cart</a> <br>
-            <a class="secondary-button product-listing-child-nav" href="#">View detailed description</a>
+            <div class="flex-box">
+              <div class="product-listing-child fave-drink-cap">
+                <h3 class="header3">Milkis</h3>
+                <label class="input-label">Drink from South Korea</label> <br>
+                <br>
+                <h4 class="header4">— $2.25 —</h4><br>
+                <p class="product-description">Drink from Lotte. Goes well with alcohol like Soju. One of the most popular soft drinks from South Korea for the summer season!</p>
+              </div>
+              <div class="product-listing-child">
+                <a class="button-nav product-listing-child-submit fave-drink-button add-fave-button" href="checkout_page.html">Add to cart</a> <br>
+                <a class="secondary-button product-listing-child-nav fave-drink-button" href="product_details.html">View detailed description</a>
+              </div>
             </div>
           </div>
 
@@ -437,6 +494,7 @@
 
           <h4>Sample code:</h4>
           <code>
+            &lt;div class="payment-form"&gt;<br>
             &lt;div class="payment-flex"&gt;<br>
                 &lt;div class="shipping-info"&gt;<br>
                     &lt;h2 class="header2 extra-bottom-margin"&gt;Shipping Info&lt;/h2&gt;<br>
@@ -478,6 +536,7 @@
                   &lt;a class="secondary-button" href="checkout_page.html"&gt;Back&lt;/a&gt;<br>
                   &lt;a class="button-submit" href="confirmation.html"&gt;Confirm Order&lt;/a&gt;<br>
                 &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
               &lt;/div&gt;
           </code>
 
@@ -528,51 +587,8 @@
                 </div>
               </div>
 
-            <!-- <h3 class="header3">Billing Info</h3>
-
-            <label class="input-label">Name</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">Billing Address</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">City</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">Province/State</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">Country</label> <br>
-            <input type="text" class="input-field"> <br> -->
-
-            <br>
-<!--
-            <h3 class="header3">Payment Info</h3>
             <br>
 
-            <input type="radio" name="credit_card" class="radio-button">
-            <label>Visa</label>
-            <br>
-            <input type="radio" name="credit_card" class="radio-button">
-            <label>Mastercard</label>
-            <br>
-            <input type="radio" name="credit_card" class="radio-button">
-            <label>American Express</label>
-            <br>
-
-            <label class="input-label">Credit Card Number</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">Expiration Date</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <label class="input-label">CVV</label> <br>
-            <input type="text" class="input-field"> <br>
-
-            <br> <br>
-
-            <a class="secondary-button" href="#">Back</a>
-            <a class="button-submit" href="#">Submit</a> -->
           </div>
 
         </section>
@@ -582,62 +598,79 @@
           <h3>Checkout Cart</h3>
 
           <h4>CSS selector:</h4>
-          <p>.checkout-cart</p>
+          <p>.checkout-container</p>
 
           <h4>Sample code:</h4>
           <code>
-          &lt;div class=&quot;checkout-cart&quot;&gt;<br />
-            &lt;p class=&quot;paragraph&quot;&gt;Item 1&lt;/p&gt;&lt;br&gt;<br />
-            &lt;h2 class=&quot;header2&quot;&gt;Milkis&lt;/h2&gt;&lt;br&gt;<br />
-            &lt;h3 class=&quot;header3&quot;&gt;$2.50&lt;/h3&gt;&lt;br&gt;<br />
-            &lt;p class=&quot;paragraph&quot;&gt;Item 2&lt;/p&gt;&lt;br&gt;<br />
-            &lt;h2 class=&quot;header2&quot;&gt;Guarana&lt;/h2&gt;&lt;br&gt;<br />
-            &lt;h3 class=&quot;header3&quot;&gt;$3.50&lt;/h3&gt;&lt;br&gt;<br />
-            &lt;p class=&quot;paragraph&quot;&gt;Total Cost:   &lt;/p&gt; <br />
-            &lt;h3 class=&quot;header3&quot;&gt;$6.00&lt;/h3&gt;&lt;br&gt;<br />
-            &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Checkout&lt;/a&gt;<br />
-          &lt;/div&gt;
+            &lt;div class="checkout-container"&gt;<br>
+
+              &lt;h1 class="header1"&gt;Checkout Cart (2)&lt;/h1&gt;<br>
+
+              &lt;div class="checkout-flex"&gt;<br>
+                &lt;div class="checkout-flex-item"&gt;<br>
+                  &lt;img src="images/drink-1.png" alt="Milkis Drink" class="checkout-photo"&gt;<br>
+                  &lt;h2 class="header2"&gt;Milkis&lt;/h2&gt;<br>
+                  &lt;h3 class="header3"&gt;— $2.25 —&lt;/h3&gt;<br>
+                  &lt;h4 class="header4 extra-bottom-margin"&gt;Quantity: 2&lt;/h4&gt;<br>
+                  &lt;p class="in-text-link"&gt;Remove from cart&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="checkout-flex-item"&gt;<br>
+                  &lt;img src="images/drink-3.png" alt="WantWant Drink" class="checkout-photo"&gt;<br>
+                  &lt;h2 class="header2"&gt;WantWant&lt;/h2&gt;<br>
+                  &lt;h3 class="header3"&gt;— $2.80 —&lt;/h3&gt;<br>
+                  &lt;h4 class="header4 extra-bottom-margin"&gt;Quantity: 1&lt;/h4&gt;<br>
+                  &lt;p class="in-text-link"&gt;Remove from cart&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="checkout-flex-item"&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+
+              &lt;div class="total-amount"&gt;<br>
+                &lt;h2 class="header2"&gt;Total: $7.30&lt;/h2&gt;<br>
+                &lt;div class="checkout-right-buttons"&gt;<br>
+                  &lt;a class="secondary-button" href="product_details.html"&gt;Back&lt;/a&gt;<br>
+                  &lt;a class="button-submit" href="payment.html"&gt;Checkout&lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+
+            &lt;/div&gt;<br>
           </code>
 
           <h4>Rendered element:</h4>
-          <div class="checkout-cart">
 
-            <div class="checkout-item">
-              <!-- <p class="paragraph">Item 1:</p> -->
-              <!-- <label class="input-label">South Korea</label> <br><br> -->
-              <img src="images/drink-1.png" class="product-image" alt="milkis drink"><br>
-              <h3 class="header3">Milkis</h4>
-              <h4 class="header4">-$2.25-</h3>
-                <h5 class="header5">Quantity: 2</h5>
-                <br><br>
-                <a class="in-text-link" href="#">Remove from cart</a>
+          <div class="checkout-container">
+
+            <h1 class="header1">Checkout Cart (2)</h1>
+
+            <div class="checkout-flex">
+              <div class="checkout-flex-item">
+                <img src="images/drink-1.png" alt="Milkis Drink" class="checkout-photo">
+                <h2 class="header2">Milkis</h2>
+                <h3 class="header3">— $2.25 —</h3>
+                <h4 class="header4 extra-bottom-margin">Quantity: 2</h4>
+                <p class="in-text-link">Remove from cart</p>
+              </div>
+              <div class="checkout-flex-item">
+                <img src="images/drink-3.png" alt="WantWant Drink" class="checkout-photo">
+                <h2 class="header2">WantWant</h2>
+                <h3 class="header3">— $2.80 —</h3>
+                <h4 class="header4 extra-bottom-margin">Quantity: 1</h4>
+                <p class="in-text-link">Remove from cart</p>
+              </div>
+              <div class="checkout-flex-item">
+              </div>
             </div>
 
-            <div class="checkout-item">
-              <!-- <p class="paragraph">Item 2:</p> -->
-
-              <!-- <label class="input-label">Brazil</label> <br><br> -->
-              <img src="images/drink-4.png" class="product-image" alt="guarana drink"><br>
-              <h3 class="header3">Guarana</h2>
-              <h4 class="header4">-$2.80-</h3>
-                <h5 class="header5">Quantity: 1</h5>
-              <br> <br>
-              <a class="in-text-link" href="#">Remove from cart</a>
-
+            <div class="total-amount">
+              <h2 class="header2">Total: $7.30</h2>
+              <div class="checkout-right-buttons">
+                <a class="secondary-button" href="product_details.html">Back</a>
+                <a class="button-submit" href="payment.html">Checkout</a>
+              </div>
             </div>
-
 
           </div>
-          <!-- monica edit: added div and checkout-cost class -->
-          <div class="checkout-cost">
-            <div class="cost-element">
-              <h3 class="header3">Total:$7.30</h3><br> <br>
-            </div>
-            <div class="checkout-buttons">
-              <a class="secondary-button" href="#">Back</a>
-              <a class="button-submit" href="#">Checkout</a>
-            </div>
-          </div>
+
 
         </section>
 

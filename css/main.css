@@ -964,6 +964,14 @@ margin: 2rem;
 /*FINAL Medium*/
 @media only screen and (max-width:1100px){
 
+  .stack{
+    flex-direction: column;
+  }
+
+  .stack-space{
+    margin: 0.5rem;
+  }
+
   .about-description{
     margin: 0;
   }
